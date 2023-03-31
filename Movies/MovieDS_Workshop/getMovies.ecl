@@ -1,11 +1,11 @@
 EXPORT getMovies := MODULE
 
     EXPORT rawMovieRec := RECORD
-        INTEGER ID;
-        STRING  IMDB_ID;
-        REAL    Popularity;
-        INTEGER Budget;
-        INTEGER Revenue;
+        INTEGER  ID;
+        STRING   IMDB_ID;
+        REAL     Popularity;
+        INTEGER  Budget;
+        INTEGER  Revenue;
         STRING   Original_Title;
         STRING   Cast;
         STRING   Homepage;
