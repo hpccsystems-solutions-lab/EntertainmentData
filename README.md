@@ -24,46 +24,128 @@ For each of the Dataset above, there are challenge questions shown here.
 Challenge Rules:
 1. Make sure that your solutions are identified to the judges by workunit number and Owner. Your Owner name should be your team name (or individual name if tackling the challenge solo).
 2. Pick at least one challenge from each category.
+**MusicMoz Challenge questions**
 
-###Spotify Challenge questions
-Category One (1):
-Sort "TopGenre" and count your total music dataset and display the first 50.
-Display first 50 songs by "garage rock" genre and then count the total.
-Count how many songs was produced by "Prince" in 1984.
-Who sang "Into Temptation"?
-Sort songs by Artist and title, output the first 100.
-Find the least Popular song using "Popularity" field
+**Million Song Dataset Challenge questions**
 
-Category Two (2):
-Display all games produced by "Coldplay" Artist AND has a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
-Count all songs that "SongDuration" is between 200 AND 250 AND "Speechiness" is above 14. Hint: (SongDuration  > 200 AND  SongDuration < 250).
-Create a new dataset which only has "Artist", "Title" and "Year", Display the first 50. Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
-What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy". 
+**Spotify Challenge questions**
+Category One (S1):
 
-Category Three (3):
-Create a new dataset which only has following conditions:
-Column named "Song" that has "Title" values
-New BOOLEAN Column called isPopular, and it's TRUE is IF "Popularity" is greater than 80
-New INTEGER Column called "Funkiness" which is "Loudness" + "Danceability"
-Display the first 50
-Hint:
-Create your new layout and use TRANSFORM for new fields.
-Use PROJECT, to loop through your music dataset
+(A)	Sort "TopGenre" and count your total music dataset and display the first 50.
 
-Display number of songs per "TopGenre", display the first 50 and count your total. Hint: All you need is a TABLE
+(B) Display first 50 songs by "garage rock" genre and then count the total.
 
-Calculate average "Danceability" per "Artist" for "Year" 2008 Hint: All you need is a TABLE
+(C) Count how many songs was produced by "Prince" in 1984.
+
+(D) Who sang "Into Temptation"?
+
+(E) Sort songs by Artist and title, output the first 100.
+
+(F) Find the least Popular song using "Popularity" field
+
+Category Two (S2):
+
+(A) Display all games produced by "Coldplay" Artist AND has a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
+
+(B) Count all songs that "SongDuration" is between 200 AND 250 AND "Speechiness" is above 14. Hint: (SongDuration  > 200 AND  SongDuration < 250).
+
+(C) Create a new dataset which only has "Artist", "Title" and "Year", Display the first 50. Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
+
+(D) What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy". 
+
+Category Three (S3):
+
+(A) Create a new dataset which only has following conditions:
+	- Column named "Song" that has "Title" values
+	- New BOOLEAN Column called isPopular, and it's TRUE is IF "Popularity" is greater than 80
+	- New INTEGER Column called "Funkiness" which is "Loudness" + "Danceability"
+	Display the first 50
+	Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
+
+(B) Display number of songs per "TopGenre", display the first 50 and count your total. Hint: All you need is a TABLE
+
+(C) Calculate average "Danceability" per "Artist" for "Year" 2008 Hint: All you need is a TABLE
+
+## Tools
+
+Start by installing one or both of the following IDEs: 
+
+Install the flagship ECL IDE if you are a Windows user [ECL IDE Install](https://hpccsystems.com/download/#h-bare-metal-non-containerized-platform).
+
+If you have a Mac or Linux box, install the Visual Studio Code IDE for your appropriate O/S, and then refer to the Installation PDF in the Docs folder of this repository to configure your IDE for ECL usage.  
+PDFs in the Docs folder of this repository can be found to guide you through the installation and configuration.
+
+[VS-Code IDE Install Page](https://code.visualstudio.com/download).
+
+Download QuickStart.mod located in this repository's root folder. This file has the initial code you need for this challenge. 
+The import process will be discussed at the Workshops, but in both IDEs simply open the MOD file and follow the prompts. CTRL+O in the ECL IDE, and the F1 key in VS-Code will pop up the command dialog, and look for the "ECL: Import 'mod' file" command. 
+
+If you need more information on the ECL jobs you are running please use [ECL Watch Page](http://54.177.201.47:8010)
+
+**Note: This cluster will only be active during the event!** After the event, you can create your own localized container cluster, or visit our public "Play" Cluster: (https://play.hpccsystems.com:18010) 
+
+For a quick start on ECL syntax, please visit the [Learn ECL](https://hpccsystems-solutions-lab.github.io/) page. 
+
+## Additional Resources
+
+- Learn ECL Academy
+https://hpccsystems-solutions-lab.github.io
+
+- ECL training containing six short videos
+https://www.youtube.com/watch?time_continue=192&v=Lk78BCCtM-0
+
+- ECL documentation
+http://cdn.hpccsystems.com/releases/CE-Candidate-8.10.12/docs/EN_US/ECLLanguageReference_EN_US-8.10.12-1.pdf
+
+- Visualization document
+https://cdn.hpccsystems.com/releases/CE-Candidate-8.10.12/docs/EN_US/VisualizingECL_EN_US-8.10.12-1.pdf
+
+- Standard Library
+https://cdn.hpccsystems.com/releases/CE-Candidate-8.10.12/docs/EN_US/ECLStandardLibraryReference_EN_US-8.10.12-1.pdf
+
+- Machine Learning
+https://hpccsystems.com/download/free-modules/machine-learning-library
 
 
+## Challenge Expectation
 
-## Resources
+Judges will consider followings during final presentation:
 
-- [LearnECL](https://learn.hpccsystems.com/) includes ECL syntax with hands-on practices
+- Problem that was chosen (What categories and datasets were selected)
+- How you approached the solution
+- Display results (ROXIE or Visualization)- please reference pertinent ECL workunits with submission 
+- Drawing conclusion (Where is your Paradise?)
+- Demo of work via a PowerPoint presentation or live demo
 
-- [ECL cheat sheet](https://github.com/hpccsystems-solutions-lab/CodeDay-Challenges/blob/main/CloudIDE-Setup.pdf) quick view of ECL syntax
+Data points will be created for each category, sorted by US State or by County. The product should be able to allow selection of one or all categories, and then weigh each category in order of importance. Based on the weight, a score will be generated for each category selected and a "Top 10" list of States with their weighed scores will be displayed.
 
-- All  [HPCC and ECL](https://hpccsystems.com/training/documentation) related information
+## Tips for a Great Score
 
+- Since your solution is the key part to this challenge you can use "#OPTION('obfuscateOutput', TRUE);" at the start of your code to hide it from being viewed on ECL Watchpage. If you decide to use #OPTION make sure to remove if from the WUID that you shared with the judges. When obfuscateOutput set to true, details are removed from the generated workunit, including ECL code, estimates of record size, and number of records.
+- If you want to write the result to a file, make sure the file name starts with your team's name for uniqueness purpose.
+- Make sure the query names are unique and easy to identify. Do not use generic names like test, mentors, or roxie. We suggest adding your team's name as well. General names will result in other teams overwriting your files, queries, and results
+- We encourage team play so teams that help answer questions in the public forums will be considered favorably in judging.
+- Direct emails and direct messages to judges asking for support will be **ignored** and it won't work in team's favor
+- We also encourage students to leverage our community forum and/or StackOverflow for ECL coding related questions. Please make sure to tag your questions with **hpcc-ecl**.
+
+## Mentors
+
+<div class="mentors">
+
+<div>
+<img src="./Images/Bob.png" alt="Bob Foreman" width="100" height="100" />
+<p><a href = "mailto: robert.foreman@lexisnexisrisk.com">Bob Foreman</a> has been an ECL Trainer for the past 12 years, and has been a Technology Teacher for longer than he wants to admit. He will be your primary onsite contact regarding all ECL related questions during this event.</p>
+</div>
+
+<div>
+<img src="./Images/Hugo.jpg" alt="Hugo Watanuki" width="100" />
+<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is responsible for the HPCC Systems Summer Internship Program. He will be available online in our slack channel to help you with ECL questions and resources you might need during this event.</p>
+</div>
+
+<div>
+<img src="./Images/George.png" alt="George Foreman" width="100" />
+<p><a href = "mailto: george.foreman@lexisnexisrisk.com">George Foreman</a> is our HPCC Systems Product Specialist and Technical Writer. He will be available onsite to help you with locating the resources you need during this event.</p>
+</div>
 
 ### Contact
 For any questions or suggestions please contact Bob Foreman @ Robert.Foreman@lexisnexisrisk.com
