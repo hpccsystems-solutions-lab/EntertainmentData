@@ -59,7 +59,7 @@ Challenge Rules:
 
 *Category Two (SP2):*
 
-(A) Display all games produced by "Coldplay" Artist AND has a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
+(A) Display all songs produced by "Coldplay" Artist AND has a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
 
 (B) Count all songs that "SongDuration" is between 200 AND 250 AND "Speechiness" is above 14. Hint: (SongDuration  > 200 AND  SongDuration < 250).
 
@@ -70,10 +70,15 @@ Challenge Rules:
 *Category Three (SP3):*
 
 (A) Create a new dataset which only has following conditions:
+
 	- Column named "Song" that has "Title" values
+	
 	- New BOOLEAN Column called isPopular, and it's TRUE is IF "Popularity" is greater than 80
+	
 	- New INTEGER Column called "Funkiness" which is "Loudness" + "Danceability"
-	Display the first 50
+	
+	Display the first 50 - 
+	
 	Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
 
 (B) Display number of songs per "TopGenre", display the first 50 and count your total. Hint: All you need is a TABLE
