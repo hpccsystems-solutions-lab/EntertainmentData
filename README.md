@@ -29,7 +29,8 @@ Challenge Rules:
 **Million Song Dataset Challenge questions**
 
 **Spotify Challenge questions**
-Category One (S1):
+
+*Category One (S1):*
 
 (A)	Sort "TopGenre" and count your total music dataset and display the first 50.
 
@@ -43,7 +44,7 @@ Category One (S1):
 
 (F) Find the least Popular song using "Popularity" field
 
-Category Two (S2):
+*Category Two (S2):*
 
 (A) Display all games produced by "Coldplay" Artist AND has a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
 
@@ -53,7 +54,7 @@ Category Two (S2):
 
 (D) What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy". 
 
-Category Three (S3):
+*Category Three (S3):*
 
 (A) Create a new dataset which only has following conditions:
 	- Column named "Song" that has "Title" values
