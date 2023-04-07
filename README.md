@@ -70,16 +70,15 @@ Challenge Rules:
 *Category Three (SP3):*
 
 (A) Create a new dataset which only has following conditions:
-
-	- Column named "Song" that has "Title" values
+- Column named "Song" that has "Title" values
 	
-	- New BOOLEAN Column called isPopular, and it's TRUE is IF "Popularity" is greater than 80
+- New BOOLEAN Column called isPopular, and it's TRUE is IF "Popularity" is greater than 80
 	
-	- New INTEGER Column called "Funkiness" which is "Loudness" + "Danceability"
+- New INTEGER Column called "Funkiness" which is "Loudness" + "Danceability"
 	
-	Display the first 50 - 
+Display the first 50 - 
 	
-	Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
+Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
 
 (B) Display number of songs per "TopGenre", display the first 50 and count your total. Hint: All you need is a TABLE
 
