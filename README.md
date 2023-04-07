@@ -28,12 +28,17 @@ Challenge Rules:
 **MusicMoz Challenge questions**
 
 *Category One (MM1):*
+
 *Category Two (MM2):*
+
 *Category Three (MM3):*
 
 **Million Song Dataset Challenge questions**
+
 *Category One (MS1):*
+
 *Category Two (MS2):*
+
 *Category Three (MS3):*
 
 **Spotify Challenge questions**
