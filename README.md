@@ -24,13 +24,21 @@ For each of the Dataset above, there are challenge questions shown here.
 Challenge Rules:
 1. Make sure that your solutions are identified to the judges by workunit number and Owner. Your Owner name should be your team name (or individual name if tackling the challenge solo).
 2. Pick at least one challenge from each category.
+
 **MusicMoz Challenge questions**
 
+*Category One (MM1):*
+*Category Two (MM2):*
+*Category Three (MM3):*
+
 **Million Song Dataset Challenge questions**
+*Category One (MS1):*
+*Category Two (MS2):*
+*Category Three (MS3):*
 
 **Spotify Challenge questions**
 
-*Category One (S1):*
+*Category One (SP1):*
 
 (A)	Sort "TopGenre" and count your total music dataset and display the first 50.
 
@@ -44,7 +52,7 @@ Challenge Rules:
 
 (F) Find the least Popular song using "Popularity" field
 
-*Category Two (S2):*
+*Category Two (SP2):*
 
 (A) Display all games produced by "Coldplay" Artist AND has a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
 
@@ -54,7 +62,7 @@ Challenge Rules:
 
 (D) What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy". 
 
-*Category Three (S3):*
+*Category Three (SP3):*
 
 (A) Create a new dataset which only has following conditions:
 	- Column named "Song" that has "Title" values
