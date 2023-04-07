@@ -98,7 +98,7 @@ PDFs in the Docs folder of this repository can be found to guide you through the
 Download QuickStart.mod located in this repository's root folder. This file has the initial code you need for this challenge. 
 The import process will be discussed at the Workshops, but in both IDEs simply open the MOD file and follow the prompts. CTRL+O in the ECL IDE, and the F1 key in VS-Code will pop up the command dialog, and look for the "ECL: Import 'mod' file" command. 
 
-If you need more information on the ECL jobs you are running please use [ECL Watch Page](http://54.177.201.47:8010)
+If you need more information on the ECL jobs you are running please use [ECL Watch Page](http://training.us-hpccsystems-dev.azure.lnrsg.io:8010)
 
 **Note: This cluster will only be active during the event!** After the event, you can create your own localized container cluster, or visit our public "Play" Cluster: (https://play.hpccsystems.com:18010) 
 
