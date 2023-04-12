@@ -29,9 +29,35 @@ Challenge Rules:
 
 *Category One (MM1):*
 
+(A) Sort the dataset by "genre" and count the total records and display the first 50
+
+(B) Display the first 50 songs by "Alternative Rock" genre and then count the total
+
+(C) How many songs was releaseded by "Sting" in 1985?
+
+(D) How many artists sang the song "Yesterday"? Display all songs and the total count.
+
+(E) Sort the dataset by Artist and song title, output the first 100
+
+(F) What song(s) in the Music Moz Dataset has the longest "description"?
+
 *Category Two (MM2):*
 
+(A) How many songs are produced by "Coldplay"? , SORT result by song title, and also display the total count in a separate output. 
+
+(B) Count and display all songs where "guest musicians" appeared.
+
+(C) Create a new dataset which only has "TrackTitle", "Title", "Name", and "ReleaseDate"
+
+- Rename the columns to Track, Release, Artist, and Year respectively
+
+- Display the first 50 
+
 *Category Three (MM3):*
+
+(A) Display number of songs grouped by "Genre", display the first 50 and count your total genres. 
+
+(B) What Artist had the most releases between 2001-2010 (releasedate)?
 
 **Million Song Dataset Challenge questions**
 
