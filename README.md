@@ -33,7 +33,7 @@ Challenge Rules:
 
 (B) Display the first 50 songs by "Alternative Rock" genre and then count the total
 
-(C) How many songs was releaseded by "Sting" in 1985?
+(C) How many songs was released by "Sting" in 1985?
 
 (D) How many artists sang the song "Yesterday"? Display all songs and the total count.
 
