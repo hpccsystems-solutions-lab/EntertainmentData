@@ -33,17 +33,17 @@ Challenge Rules:
 
 (B) Display the first 50 songs by "Alternative Rock" genre and then count the total
 
-(C) How many songs was released by "Sting" in 1985?
+(C) How many songs were released by "Sting" in 1985?
 
 (D) How many artists sang the song "Yesterday"? Display all songs and the total count.
 
 (E) Sort the dataset by Artist and song title, output the first 100
 
-(F) What song(s) in the Music Moz Dataset has the longest "description"?
+(F) What song(s) in the Music Moz Dataset have the longest "description"?
 
 *Category Two (MM2):*
 
-(A) How many songs are produced by "Coldplay"? , SORT result by song title, and also display the total count in a separate output. 
+(A) How many songs were produced by "Coldplay"? , SORT result by song title, and also display the total count in a separate output. 
 
 (B) Count and display all songs where "guest musicians" appeared.
 
@@ -55,7 +55,7 @@ Challenge Rules:
 
 *Category Three (MM3):*
 
-(A) Display number of songs grouped by "Genre", display the first 50 and count your total genres. 
+(A) Display the number of songs grouped by "Genre", display the first 50 and count your total genres. 
 
 (B) What Artist had the most releases between 2001-2010 (releasedate)?
 
@@ -67,7 +67,7 @@ Challenge Rules:
 
 (B)Count the total number of songs released in 2010 and display the first 50 results
 
-(C)How many songs was produced by "Prince" in 1982? 
+(C)How many songs were produced by "Prince" in 1982? 
 
 (D)Who sang "Into Temptation?"
 
@@ -81,7 +81,7 @@ Challenge Rules:
 
 *Category Two (MS2):*
 
-(A)Display all songs produced by the artist "Coldplay" that has a "Song Hotness" greater or equal to .75 ( >= .75 )
+(A)Display all songs produced by the artist "Coldplay" that have a "Song Hotness" greater or equal to .75 ( >= .75 )
 
 - SORT the output by title.
 
@@ -129,7 +129,7 @@ Challenge Rules:
 
 (B) Display first 50 songs by "garage rock" genre and then count the total.
 
-(C) Count how many songs was produced by "Prince" in 1984.
+(C) Count how many songs were produced by "Prince" in 1984.
 
 (D) Who sang "Into Temptation"?
 
@@ -139,20 +139,20 @@ Challenge Rules:
 
 *Category Two (SP2):*
 
-(A) Display all songs produced by "Coldplay" Artist AND has a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
+(A) Display all songs produced by "Coldplay" Artist AND with a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
 
-(B) Count all songs that "SongDuration" is between 200 AND 250 AND "Speechiness" is above 14. Hint: (SongDuration  > 200 AND  SongDuration < 250).
+(B) Count all songs where "SongDuration" is between 200 AND 250 AND "Speechiness" is above 14. Hint: (SongDuration  > 200 AND  SongDuration < 250).
 
 (C) Create a new dataset which only has "Artist", "Title" and "Year", Display the first 50. Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
 
-(D) What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy". 
+(D) What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy"?
 
 *Category Three (SP3):*
 
 (A) Create a new dataset which only has following conditions:
 - Column named "Song" that has "Title" values
 	
-- New BOOLEAN Column called isPopular, and it's TRUE is IF "Popularity" is greater than 80
+- New BOOLEAN Column called isPopular, and it's TRUE IF "Popularity" is greater than 80
 	
 - New INTEGER Column called "Funkiness" which is "Loudness" + "Danceability"
 	
