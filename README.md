@@ -164,7 +164,7 @@ Challenge Rules:
 
 (C) Calculate average "Danceability" per "Artist" for "Year" 2008 Hint: All you need is a TABLE
 
-**Bonus Challenge **
+**Bonus Challenge**
 
 Combine the above 3 datasets into a composite dataset with the following format:
 
