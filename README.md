@@ -164,6 +164,21 @@ Challenge Rules:
 
 (C) Calculate average "Danceability" per "Artist" for "Year" 2008 Hint: All you need is a TABLE
 
+**Bonus Challenge **
+
+Combine the above 3 datasets into a composite dataset with the following format:
+
+`CombMusicLayout := RECORD`
+ `UNSIGNED RECID;`
+ `STRING   SongTitle;`
+ `STRING   AlbumTitle;`
+ `STRING   Artist;`
+ `STRING4  ReleaseYear;`
+`END;`
+
+Remove any duplicate songs, sequence the song records and count the new total.
+
+
 ## Tools
 
 Start by installing one or both of the following IDEs: 
