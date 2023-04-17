@@ -17,6 +17,8 @@ MSDMusic  := $.File_Music.MSDDS;
 SpotMusic := $.File_Music.SpotDS;
 
 // Combine the three datasets into a composite dataset with a common record format
+// Remove any duplicate songs and songs with blank titles, sequence the remaining song records and count the new total.
+// There should be 1010083 combined and cleaned records. 
 
 CombMusicLayout := RECORD
  UNSIGNED RECID;
@@ -59,7 +61,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display first 50 songs by of year 2010 and then count the total 
+//Display first 50 songs in year 2010 and then count the total number of songs released in 2010 
 
 //Result should have 9397 songs for 2010
 
@@ -72,20 +74,20 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Count how many songs was produced by "Prince" in 1982
+//Count how many songs were produced by "Prince" in 1982
 
 //Result should have 4 counts
 
 //Filter ds for "Prince" AND 1982
 
-//Count and print total 
+//Count and display total 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
 //Who sang "Into Temptation"?
 
-// Result should have 3 records
+//Result should have 3 records
 
 //Filter for "Into Temptation"
 
@@ -100,7 +102,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 
 //Result: The first 10 records have no artist name, followed by "- PlusMinus"                                     
 
-//Sort dataset by Artist, and Title
+//Sort dataset by Artist and Title respectively
 
 
 //Output the first 100
@@ -131,7 +133,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display all songs produced by the artist "Coldplay" AND has a 
+//Display all songs produced by the artist "Coldplay" AND have a 
 //"Song Hotness" greater or equal to .75 ( >= .75 ) , SORT it by title.
 //Count the total result
 
@@ -190,8 +192,8 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//1- What’s the correlation between "song_hotness" AND "artist_hotness"
-//2- What’s the correlation between "barsstartdev" AND "beatsstartdev"
+//1- What’s the correlation between "song_hotness" AND "artist_hotness"?
+//2- What’s the correlation between "barsstartdev" AND "beatsstartdev"?
 
 //Result for hotness = 0.4706972681953097, StartDev = 0.8896342348554744
 
@@ -205,10 +207,10 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Create a new dataset which only has following conditions
-//   *  Column named "Song" that has "Title" values 
-//   *  Column named "Artist" that has "artist_name" values 
-//   *  New BOOLEAN Column called isPopular, and it's TRUE is IF "song_hotness" is greater than .80
+//Create a new dataset which only have following conditions
+//   *  Column named "Song" that have "Title" values 
+//   *  Column named "Artist" that have "artist_name" values 
+//   *  New BOOLEAN Column called isPopular, and it's TRUE IF "song_hotness" is greater than .80
 //   *  New BOOLEAN Column called "IsTooLoud" which is TRUE IF "Loudness" > 0
 //Display the first 50
 
@@ -235,11 +237,11 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //Challenge: 
 //Display number of songs per "Year" and count your total 
 
-//Result has 2 col, Year and TotalSongs, count is 89
+//Result has 2 columns(fields), Year and TotalSongs, and count is 89
 
 //Hint: All you need is a cross-tab TABLE 
 
-//Display the  result      
+//Display the result      
 
 //Count and display total number of years counted
 
@@ -756,24 +758,80 @@ OUTPUT(MyTable);
 */
  
 EXPORT File_Music := MODULE
+/* name            The artist name behind the release. There are 1276 unique names in the MusicMoz dataset
+   id              A 16-character unique id for each release. There are a little over 12000 unique releases in this dataset
+   rtype           Extracted from the original dataset – always “release”
+   title           Release name. 
+   genre           There are 1000 genre types in MusicMoz (Example, Alternative, Rock, Country, etc.)
+   releasedate     Release Date in no specific format, generally only year is specified.
+   disc            This field is not used and is always blank
+   number          Track number of the release
+   tracktitle      Name of the track (song)
+   formats         Wide variety of release formats (over 400)
+   label	          The name of the record company who released the album
+   catalognumber   Record companies’ catalog number
+   producers       Comma delimited list of primary producers
+   coversrc        Web link to Release (Album) Cover art.
+   guestmusicians	 Comma delimited list of guest musicians on the release
+   description     General free form comments regarding the release.
+*/
+
 EXPORT MozLayout := RECORD
- string45  name;
- string16  id;
- string11  rtype;
- string126 title;
- string131 genre;
- string28  releasedate;
- string2   disc;
- unsigned2 number;
- string657 tracktitle;
- string66  formats;
- string77  label;
- string107 catalognumber;
- string250 producers;
- string150 coversrc;
- string4981 guestmusicians;
+ string45    name;
+ string16    id;
+ string11    rtype;
+ string126   title;
+ string131   genre;
+ string28    releasedate;
+ string2     disc;
+ unsigned2   number;
+ string657   tracktitle;
+ string66    formats;
+ string77    label;
+ string107   catalognumber;
+ string250   producers;
+ string150   coversrc;
+ string4981  guestmusicians;
  string21827 description;
 END;
+
+// MSD Layout
+/* RecID             Unique Record ID
+   song_id           The original song ID used by Echo Nest, not really used in this challenge 		
+   title             song title 
+   year              year song was released 
+   song_hotness      download indicator (0 to 1) 
+   artist_id         original artist id from musicbrainz.org 
+   artist_name       artist name 
+   artist_hotness    overall downloads of artist (0 to 1) 
+   familiarity       search indicator of artist 
+   release_id        Album id where song (title) exists
+   release_name      name of release where song exists
+   latitude          latitude where the song was recorded 
+   Longitude         Longitude where the song was recorded 
+   Location          where the song was recorded 
+   key               Estimation of the key the song in in by Spotify
+   key_conf          Confidence of the key estimation 
+   loudness          General loudness of the track relative to -60db
+   mode              Estimation of mode the song is in by Spotify 
+   mode_conf         Confidence of the mode estimation 
+   duration          Song duration in seconds  
+   start_of_fade_out Fade out of song in seconds 
+   end_of_fade_in    Fade in to song in seconds 
+   tempo             tempo in beats per minute (BPM) 
+   time_signature    number of beats per bar 
+   time_signature_conf  Confidence of the time signature estimation 
+   CntBars           Total Bars in the song
+   AvgBarsConf       Bars_Analysis   
+   BarsConfDev       Bars_Analysis
+   AvgBarsStart      Bars_Analysis   
+   BarsStartDev      Bars_Analysis
+   CntBeats          Beats_Analysis
+   AvgBeatsConf      Beats_Analysis   
+   BeatsConfDev      Beats_Analysis
+   AvgBeatsStart     Beats_Analysis   
+   BeatsStartDev     Beats_Analysis
+*/
 
 EXPORT MSDLayout := RECORD
     UNSIGNED4 RecID;
@@ -884,6 +942,8 @@ somePeople := allPeople(LastName = 'Smith');
 somePeople;
 //Import:ecl:CodeSharks.Hello
 
+//Import:ecl:CodeSharks.Hello-508775
+OUTPUT('Hello Sharks');
 //Import:ecl:CodeSharks.JOINExample
 MyRec := RECORD
     STRING1 Value1;
