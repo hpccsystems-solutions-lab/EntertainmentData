@@ -232,8 +232,7 @@ Judges will consider followings during final presentation:
 
 - Problem that was chosen (What categories and datasets were selected)
 - How you approached the solution
-- Display results (ROXIE or Visualization)- please reference pertinent ECL workunits with submission 
-- Demo of work via a PowerPoint presentation or live demo
+
 
 
 ## Tips for a Great Score
@@ -241,9 +240,6 @@ Judges will consider followings during final presentation:
 - Since your solution is the key part to this challenge you can use "#OPTION('obfuscateOutput', TRUE);" at the start of your code to hide it from being viewed on ECL Watchpage. If you decide to use #OPTION make sure to remove if from the WUID that you shared with the judges. When obfuscateOutput set to true, details are removed from the generated workunit, including ECL code, estimates of record size, and number of records.
 - If you want to write the result to a file, make sure the file name starts with your team's name for uniqueness purpose.
 - Make sure the query names are unique and easy to identify. Do not use generic names like test, mentors, or roxie. We suggest adding your team's name as well. General names will result in other teams overwriting your files, queries, and results
-- We encourage team play so teams that help answer questions in the public forums will be considered favorably in judging.
-- Direct emails and direct messages to judges asking for support will be **ignored** and it won't work in team's favor
-- We also encourage students to leverage our community forum and/or StackOverflow for ECL coding related questions. Please make sure to tag your questions with **hpcc-ecl**.
 
 ## Mentors
 
@@ -252,6 +248,11 @@ Judges will consider followings during final presentation:
 <div>
 <img src="./Images/Bob.png" alt="Bob Foreman" width="100" height="100" />
 <p><a href = "mailto: robert.foreman@lexisnexisrisk.com">Bob Foreman</a> has been an ECL Trainer for the past 12 years, and has been a Technology Teacher for longer than he wants to admit. He will be your primary onsite contact regarding all ECL related questions during this event.</p>
+</div>
+
+<div>
+<img src="./Images/Richard.jpg" alt="Richard Taylor" width="100" height="100" />
+<p><a href = "mailto: richard.taylor@lexisnexisrisk.com">Richard Taylor</a>is the Chief Trainer at LexisNexis and an ECL Master for the past 20 years. He is also the original member of the Documentation Team.</p>
 </div>
 
 <div>
