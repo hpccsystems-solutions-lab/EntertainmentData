@@ -252,7 +252,7 @@ Judges will consider followings during final presentation:
 
 <div>
 <img src="./Images/Richard.jpg" alt="Richard Taylor" width="100" height="100" />
-<p><a href = "mailto: richard.taylor@lexisnexisrisk.com">Richard Taylor</a>is the Chief Trainer at LexisNexis and an ECL Master for the past 20 years. He is also the original member of the Documentation Team.</p>
+<p><a href = "mailto: richard.taylor@lexisnexisrisk.com">Richard Taylor</a> is the Chief Trainer at LexisNexis and an ECL Master for the past 20 years. He is also the original member of the Documentation Team.</p>
 </div>
 
 <div>
