@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+	    {
+            "name": "localhost",
+            "type": "ecl",
+            "request": "launch",
+            "protocol": "http",
+            "serverAddress": "localhost",
+            "port": 8010,
+            "targetCluster": "thor",
+            "rejectUnauthorized": true,
+            "resultLimit": 100,
+            "timeoutSecs": 60,
+            "user": "TrainerBob",
+            "password": ""
+        },
+        {
+            "name": "PlayCluster",
+            "type": "ecl",
+            "request": "launch",
+            "protocol": "https",
+            "serverAddress": "play.hpccsystems.com",
+            "port": 18010,
+            "targetCluster": "thor",
+            "rejectUnauthorized": false,
+            "resultLimit": 100,
+            "timeoutSecs": 60,
+            "user": "gitpod_user",
+            "password": ""
+        }
+    ]
+}
