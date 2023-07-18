@@ -8,8 +8,17 @@ This challenge starts with an overview of ECL language and its syntax. Then we w
 Are you ready for the challenge? Let's get started! 
 
 ## Data Sources (Datasets)
-Text
+We will be using the Star Wars Character Dataset in this workshop. There is a lot to explore! 
  
 ## Challenge 
-Our challege dataset is Star Wars Characters!
+We will use the power of ECL to understand the characters better. 
 
+Examples:
+
+Who is the largest character?
+
+Who has appeared in the most movies?
+
+How many Male Characters, how many female?
+
+...and a lot more! 

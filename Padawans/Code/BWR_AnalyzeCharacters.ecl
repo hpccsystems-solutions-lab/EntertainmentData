@@ -17,8 +17,8 @@ END;
 
 Analyze := PROJECT(Characters,CountStuff(LEFT));
 
-OUTPUT(SORT(Analyze,-FilmCount));
-OUTPUT(SORT(Analyze,-VehicleCount));
-OUTPUT(SORT(Analyze,-ShipCount));
+OUTPUT(SORT(Analyze,-FilmCount),NAMED('MostFilms'));
+OUTPUT(SORT(Analyze,-VehicleCount),NAMED('MostVehicles'));
+OUTPUT(SORT(Analyze,-ShipCount),NAMED('MostShips'));
 
 
