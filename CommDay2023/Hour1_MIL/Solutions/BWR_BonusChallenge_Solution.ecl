@@ -57,5 +57,6 @@ DedSort     := SORT(FinalDS,SongTitle,Artist);
 CleanCompDS := DEDUP(DedSort,SongTitle,Artist);
 CompDS      := PROJECT(CleanCompDS(SongTitle[..4] NOT IN ['&lt;','&quo']),
                                    TRANSFORM(CombMusiclayout,SELF.RECID := COUNTER,SELF := LEFT));
-OUTPUT(CHOOSEN(CompDS,500));
+OUTPUT(CHOOSEN(SORT(CompDS,Artist),500));
 COUNT(CompDS);
+OUTPUT(CompDS(Artist[..5] = 'Bowie'));
