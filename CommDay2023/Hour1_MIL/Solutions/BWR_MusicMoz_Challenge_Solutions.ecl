@@ -26,8 +26,8 @@ SortGenre := SORT(MozMusic, genre);
 OUTPUT(CHOOSEN(SortGenre(genre <> ''), 200), NAMED('SortGenre'));
 
 //Count and display result
-// OUTPUT(COUNT(SortGenre), NAMED('Count_SortGenre'));
-OUTPUT(COUNT(SortGenre(genre='')), NAMED('Count_SortGenre'));
+OUTPUT(COUNT(SortGenre), NAMED('Cnt_All'));
+OUTPUT(COUNT(SortGenre(genre='')), NAMED('Cnt_BlankGenre'));
 
 //*********************************************************************************
 //*********************************************************************************

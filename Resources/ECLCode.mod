@@ -1,4 +1,4 @@
-﻿//Import:ecl:CodeSharks.BrowseInputData
+﻿//Import:ecl:ECLCode.BrowseInputData
 IMPORT $;
 MozMusic  := $.File_Music.MozDS;
 MSDMusic  := $.File_Music.MSDDS;
@@ -10,7 +10,7 @@ OUTPUT(SpotMusic,NAMED('SpotMusic'));
 
 
 
-//Import:ecl:CodeSharks.BWR_BonusChallenge
+//Import:ecl:ECLCode.BWR_BonusChallenge
 IMPORT $;
 MozMusic  := $.File_Music.MozDS;
 MSDMusic  := $.File_Music.MSDDS;
@@ -29,7 +29,7 @@ CombMusicLayout := RECORD
 END;
 
 OUTPUT('ToDo');
-//Import:ecl:CodeSharks.BWR_MSDChallenge
+//Import:ecl:ECLCode.BWR_MSDChallenge
 IMPORT $;
 MSDMusic := $.File_Music.MSDDS;
 
@@ -261,7 +261,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 
 // Display the top ten results with top "HotRate"      
 
-//Import:ecl:CodeSharks.BWR_MusicMozChallenge
+//Import:ecl:ECLCode.BWR_MusicMozChallenge
 IMPORT $;
 MozMusic := $.File_Music.MozDS;
 
@@ -463,7 +463,7 @@ END;
 
 //Display the result      
 
-//Import:ecl:CodeSharks.BWR_SpotifyChallenge
+//Import:ecl:ECLCode.BWR_SpotifyChallenge
 IMPORT $;
 SpotMusic := $.File_Music.SpotDS;
 
@@ -719,7 +719,7 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 
 
 
-//Import:ecl:CodeSharks.CrossTabExample
+//Import:ecl:ECLCode.CrossTabExample
 MyRec := RECORD
     STRING1  Value1;
     STRING1  Value2;
@@ -750,7 +750,7 @@ OUTPUT(MyTable);
     3       B       1           4
 */
 
-//Import:ecl:CodeSharks.File_Music
+//Import:ecl:ECLCode.File_Music
 /* You have 3 datasets to work with in this challenge:
    MusicMoz
    Spotify 2000
@@ -922,7 +922,7 @@ EXPORT MozDS  := DATASET('~MIL::IN::MozTracks',MozLayout,CSV(HEADING(1)));
 EXPORT MSDDS  := DATASET('~MIL::IN::MillionSongs',MSDLayout,CSV(HEADING(1)));
 EXPORT SpotDS := DATASET('~MIL::IN::Spotify2000',SpotLayout,CSV(HEADING(1)));
 END;
-//Import:ecl:CodeSharks.FilterExample
+//Import:ecl:ECLCode.FilterExample
 /*
     Example code - use without restriction.  
 */
@@ -940,11 +940,11 @@ somePeople := allPeople(LastName = 'Smith');
 
 //  Outputs  ---
 somePeople;
-//Import:ecl:CodeSharks.Hello
+//Import:ecl:ECLCode.Hello
 
-//Import:ecl:CodeSharks.Hello-508775
+//Import:ecl:ECLCode.Hello-508775
 OUTPUT('Hello Sharks');
-//Import:ecl:CodeSharks.JOINExample
+//Import:ecl:ECLCode.JOINExample
 MyRec := RECORD
     STRING1 Value1;
     STRING1 Value2;
@@ -1044,7 +1044,7 @@ FOnlyJoinedRecs result set is:
     2        X        B
 */
 
-//Import:ecl:CodeSharks.PROJECTExample
+//Import:ecl:ECLCode.PROJECTExample
 MyRec := RECORD
     STRING1 Value1;
     STRING1 Value2;

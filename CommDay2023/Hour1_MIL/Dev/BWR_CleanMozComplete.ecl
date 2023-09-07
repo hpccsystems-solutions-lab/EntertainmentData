@@ -26,7 +26,7 @@ OUTPUT(ArtistRelDS(name[..7]='Beatles'),NAMED('ArtistFilter'));
 
 //Process THOR file now:
 //Normalize Items Test:
-OUTPUT(ArtistRelDS.Items,{ArtistRelDS.Name,ArtistRelDS.Items},'~MIL::ItemsNormalizedTest1',OVERWRITE);
+// OUTPUT(ArtistRelDS.Items,{ArtistRelDS.Name,ArtistRelDS.Items},'~MIL::ItemsNormalizedTest1',OVERWRITE);
 
 //Now flatten (normalize) the tracks
 // OUTPUT(ArtistRelDS.Items.Tracks,{ArtistRelDS.Name,ArtistRelDS.Items,ArtistRelDS.Items.Tracks},'~MIL::TracksNormalizedTest1',OVERWRITE);
@@ -36,7 +36,8 @@ OUTPUT(ArtistRelDS.Items.Tracks,{ArtistRelDS.Name,
                                  ArtistRelDS.Items.genre,
                                  ArtistRelDS.Items.releaseDate,
                                  ArtistRelDS.Items.formats,
-                                 ArtistRelDS.Items.Tracks});
+                                 ArtistRelDS.Items.Tracks}
+                                 ,NAMED('TrackFlat'));
 
 // FlatLay FlatTrack(Release Le,INTEGER Cnt) := TRANSFORM
 // SELF.disc       := Le.Tracks[Cnt].disc;
