@@ -1,9 +1,9 @@
 # HPCC Systems ECL Code Challenge
 
 Welcome to the HPCC Systems ECL Code Challenge!
-This challenge is named "Music is Life" 
+This year's challenge is "Music is Life" 
 
-You will be introduced to big data concepts, how to process and analyze data using ECL (Enterprise Control Language). This challenge starts with an overview of ECL language and its syntax. Then students are given a series of problems ranging from easy to mid-level difficulty to solve. 
+You will be introduced to big data concepts, how to process and analyze data using ECL (Enterprise Control Language). This challenge starts with an overview of ECL language and its syntax. Then  students are given a series of problems ranging  from easy to mid-level difficulty to solve. 
 
 ## Data Sources (Datasets)
 
@@ -23,7 +23,7 @@ For each of the Dataset above, there are challenge questions shown here.
 
 Challenge Rules:
 1. Make sure that your solutions are identified to the judges by workunit number and Owner. Your Owner name should be your team name (or individual name if tackling the challenge solo).
-2. Pick at least one challenge from each category. More credit will be given for completing more categories.
+2. Pick at least one challenge from each category.
 
 **MusicMoz Challenge questions**
 

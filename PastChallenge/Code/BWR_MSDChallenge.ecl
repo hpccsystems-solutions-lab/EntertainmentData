@@ -29,7 +29,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display first 50 songs in year 2010 and then count the total number of songs released in 2010 
+//Display first 50 songs by of year 2010 and then count the total 
 
 //Result should have 9397 songs for 2010
 
@@ -42,20 +42,20 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Count how many songs were produced by "Prince" in 1982
+//Count how many songs was produced by "Prince" in 1982
 
 //Result should have 4 counts
 
 //Filter ds for "Prince" AND 1982
 
-//Count and display total 
+//Count and print total 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
 //Who sang "Into Temptation"?
 
-//Result should have 3 records
+// Result should have 3 records
 
 //Filter for "Into Temptation"
 
@@ -70,7 +70,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 
 //Result: The first 10 records have no artist name, followed by "- PlusMinus"                                     
 
-//Sort dataset by Artist and Title respectively
+//Sort dataset by Artist, and Title
 
 
 //Output the first 100
@@ -101,7 +101,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display all songs produced by the artist "Coldplay" AND have a 
+//Display all songs produced by the artist "Coldplay" AND has a 
 //"Song Hotness" greater or equal to .75 ( >= .75 ) , SORT it by title.
 //Count the total result
 
@@ -160,8 +160,8 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//1- What’s the correlation between "song_hotness" AND "artist_hotness"?
-//2- What’s the correlation between "barsstartdev" AND "beatsstartdev"?
+//1- What’s the correlation between "song_hotness" AND "artist_hotness"
+//2- What’s the correlation between "barsstartdev" AND "beatsstartdev"
 
 //Result for hotness = 0.4706972681953097, StartDev = 0.8896342348554744
 
@@ -175,10 +175,10 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Create a new dataset which only have following conditions
-//   *  Column named "Song" that have "Title" values 
-//   *  Column named "Artist" that have "artist_name" values 
-//   *  New BOOLEAN Column called isPopular, and it's TRUE IF "song_hotness" is greater than .80
+//Create a new dataset which only has following conditions
+//   *  Column named "Song" that has "Title" values 
+//   *  Column named "Artist" that has "artist_name" values 
+//   *  New BOOLEAN Column called isPopular, and it's TRUE is IF "song_hotness" is greater than .80
 //   *  New BOOLEAN Column called "IsTooLoud" which is TRUE IF "Loudness" > 0
 //Display the first 50
 
@@ -205,11 +205,11 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //Challenge: 
 //Display number of songs per "Year" and count your total 
 
-//Result has 2 columns(fields), Year and TotalSongs, and count is 89
+//Result has 2 col, Year and TotalSongs, count is 89
 
 //Hint: All you need is a cross-tab TABLE 
 
-//Display the result      
+//Display the  result      
 
 //Count and display total number of years counted
 
