@@ -29,21 +29,21 @@ Challenge Rules:
 
 *Category One (MM1):*
 
-(A) Sort the dataset by "genre" and count the total records and display the first 50
+(A) Count the total records in the dataset.
 
-(B) Display the first 50 songs by "Alternative Rock" genre and then count the total
+(B) Sort MusicMoz by "name" and display (OUTPUT) the first 50 records(Hint: use CHOOSEN)
 
-(C) How many songs were released by "Sting" in 1985?
+(C) Display the first 50 songs by "Rock" genre and then count the total
 
-(D) How many artists sang the song "Yesterday"? Display all songs and the total count.
+(D) How many songs were released by Depeche Mode between 1980 and 1989?
 
-(E) Sort the dataset by Artist and song title, output the first 100
+(E) How many artists sang the song "My Way"? Display all songs and the total count.
 
 (F) What song(s) in the Music Moz Dataset have the longest "description"?
 
 *Category Two (MM2):*
 
-(A) How many songs were produced by "Coldplay"? , SORT result by song title, and also display the total count in a separate output. 
+(A) How many songs were produced by "U2"? , SORT result by song title, and also display the total count in a separate output. 
 
 (B) Count and display all songs where "guest musicians" appeared.
 

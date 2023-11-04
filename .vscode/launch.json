@@ -12,7 +12,7 @@
             "rejectUnauthorized": false,
             "resultLimit": 100,
             "timeoutSecs": 60,
-            "user": "YourNameHere",
+            "user": "YourTeamNameHere",
             "password": ""
         }
     ]

@@ -1,4 +1,5 @@
-﻿IMPORT $;
+﻿#OPTION('obfuscateOutput', TRUE);
+IMPORT $;
 MozMusic := $.File_Music.MozDS;
 
 //display the first 150 records
@@ -14,84 +15,72 @@ OUTPUT(CHOOSEN(MozMusic, 150), NAMED('Moz_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//Sort "genre" and count your total music dataset and display the first 50
+//Count all the records in the dataset:
+
 
 //Result: Total count is 136510
 
-//Sort by "genre"
+//*********************************************************************************
+//*********************************************************************************
+//Challenge: 
 
+//Sort by "name",  and display (OUTPUT) the first 50(Hint: use CHOOSEN):
 
-//display the first 50
+//You should see a lot of songs by NSync 
 
-
-//Count and display result
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display first 50 songs by "Alternative Rock" genre and then count the total 
-
-//Result should have 2384 records/counts
-
-//Filter for Alternative Rock and print the 50
+//Count total songs in the "Rock" genre and display number:
 
 
-//Count total alternative rock:
+//Result should have 12821 Rock songs
 
+//Display your Rock songs (OUTPUT):
 
-//*********************************************************************************
-//*********************************************************************************
-//Challenge: 
-//Count how many songs was releaseded by "Sting" in 1985?
-
-//Result should have 10 songs
-
-//Filter dataset for "Sting" AND '1985'
-
-//Count and print total 
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Who sang "Yesterday"?
+//Count how many songs was released by Depeche Mode between 1980 and 1989
 
-// Result should have 49 records by multiple artists  
+//Filter ds for "Depeche_Mode" AND releasedate BETWEEN 1980 and 1989
 
-//Filter for "Yesterday"
-
-
-//Display and count result 
+// Count and display total
+//Result should have 127 songs 
 
 
-//*********************************************************************************
-//*********************************************************************************
-//Challenge: 
-//Sort songs by Artist and song title, output the first 100
-
-//Result: You should see *N_Sync as the first artist                                     
-
-//Sort dataset by Artist, and Title
-
-
-//Output the first 100
+//Bonus points: filter out duplicate tracks (Hint: look at DEDUP):
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//What song(s) in the Music Moz Dataset had the longest description?
+//Who sang the song "My Way"?
+//Filter for "My Way" tracktitle
 
-//Result is REO Speedwagon (The Second Decade of Rock and Roll 1981 to 1991)
+// Result should have 136 records 
 
-//Get the Max description field length
+//Display count and result 
 
 
-//Filter dataset for the Maxdesc value
+//*********************************************************************************
+//*********************************************************************************
+//Challenge: 
+//What song(s) in the Music Moz Dataset has the longest track title in CD format?
+
+//Get the longest description (tracktitle) field length in CD "formats"
+
+
+//Filter dataset for tracktitle with the longest value
 
 
 //Display the result
+
+//Longest track title is by the "The Brand New Heavies"               
 
 
 //*********************************************************************************
@@ -102,21 +91,21 @@ OUTPUT(CHOOSEN(MozMusic, 150), NAMED('Moz_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display all songs produced by "Coldplay" , SORT it by song title.
-//Count the total result
+//Display all songs produced by "U2" , SORT it by title.
 
-//Result has 63 records
-
-//Get songs by defined conditions
+//Filter track by artist
 
 
-//Sort the result
+//Sort the result by tracktitle
 
 
 //Output the result
 
 
-//Count and output result 
+//Count result 
+
+
+//Result has 190 records
 
 
 //*********************************************************************************
@@ -124,41 +113,37 @@ OUTPUT(CHOOSEN(MozMusic, 150), NAMED('Moz_MusicDS'));
 //Challenge: 
 //Count all songs where guest musicians appeared 
 
-//Result is 44588 songs  
-
 //Hint: Think of the filter as "not blank" 
 
-//Filter for required conditions
+//Filter for "guestmusicians"
 
-//Count result
+
+//Display Count result
                              
 
-//Display result
+//Result should be 44588 songs  
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Create a new dataset which only has "TrackTitle", "Name", "Title", and "ReleaseDate"
-//Display the first 50
+//Create a new recordset which only has "Track", "Release", "Artist", and "Year"
+// Get the "track" value from the MusicMoz TrackTitle field
+// Get the "release" value from the MusicMoz Title field
+// Get the "artist" value from the MusicMoz Name field
+// Get the "year" value from the MusicMoz ReleaseDate field
 
-//Result should only have 4 columns. 
+//Result should only have 4 fields. 
 
-//Hint: Create your new layout and use TRANSFORM for new fields. 
+//Hint: First create your new RECORD layout  
+
+
+
+//Next: Standalone Transform - use TRANSFORM for new fields.
+
+
 //Use PROJECT, to loop through your music dataset
 
-
-Song_Layout := RECORD
-     STRING Track;
-     STRING Release;
-     STRING Artist;
-     INTEGER Year;
-END;
-
-//Standalone Transform 
-
-
-//PROJECT
 
 // Display result  
       
@@ -172,18 +157,17 @@ END;
 //*********************************************************************************
 
 //Challenge: 
-//Display number of songs per "Genre", display the first 50 and count your total 
+//Display number of songs per "Genre", display genre name and count for each 
 
-//Result has 2 col, Genre and TotalSongs, count is 1000
+//Hint: All you need is a 2 field TABLE using cross-tab
 
-//Hint: All you need is a TABLE 
-
-
-//Printing the first 50 records of the result      
+//Display the TABLE result      
 
 
-//Count and display total
+//Count and display total records in TABLE
 
+
+//Result has 2 fields, Genre and TotalSongs, count is 1000
 
 //*********************************************************************************
 //*********************************************************************************
@@ -193,8 +177,9 @@ END;
 
 //Output Name, and Title Count(TitleCnt)
 
-//Filter for year
+//Filter for year (releasedate)
 
-// deduptitles(name='Presley,_Elvis'); //See why Elvis was the winner!
+//Cross-tab TABLE
+
 
 //Display the result      
