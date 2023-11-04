@@ -1,4 +1,4 @@
-﻿//Import:ecl:ECLCode.BrowseInputData
+﻿//Import:ECLCode.BrowseInputData
 IMPORT $;
 MozMusic  := $.File_Music.MozDS;
 MSDMusic  := $.File_Music.MSDDS;
@@ -10,15 +10,13 @@ OUTPUT(SpotMusic,NAMED('SpotMusic'));
 
 
 
-//Import:ecl:ECLCode.BWR_BonusChallenge
+//Import:ECLCode.BWR_BonusChallenge
 IMPORT $;
 MozMusic  := $.File_Music.MozDS;
 MSDMusic  := $.File_Music.MSDDS;
 SpotMusic := $.File_Music.SpotDS;
 
 // Combine the three datasets into a composite dataset with a common record format
-// Remove any duplicate songs and songs with blank titles, sequence the remaining song records and count the new total.
-// There should be 1010083 combined and cleaned records. 
 
 CombMusicLayout := RECORD
  UNSIGNED RECID;
@@ -29,7 +27,7 @@ CombMusicLayout := RECORD
 END;
 
 OUTPUT('ToDo');
-//Import:ecl:ECLCode.BWR_MSDChallenge
+//Import:ECLCode.BWR_MSDChallenge
 IMPORT $;
 MSDMusic := $.File_Music.MSDDS;
 
@@ -61,7 +59,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display first 50 songs in year 2010 and then count the total number of songs released in 2010 
+//Display first 50 songs by of year 2010 and then count the total 
 
 //Result should have 9397 songs for 2010
 
@@ -74,20 +72,20 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Count how many songs were produced by "Prince" in 1982
+//Count how many songs was produced by "Prince" in 1982
 
 //Result should have 4 counts
 
 //Filter ds for "Prince" AND 1982
 
-//Count and display total 
+//Count and print total 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
 //Who sang "Into Temptation"?
 
-//Result should have 3 records
+// Result should have 3 records
 
 //Filter for "Into Temptation"
 
@@ -102,7 +100,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 
 //Result: The first 10 records have no artist name, followed by "- PlusMinus"                                     
 
-//Sort dataset by Artist and Title respectively
+//Sort dataset by Artist, and Title
 
 
 //Output the first 100
@@ -133,7 +131,7 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display all songs produced by the artist "Coldplay" AND have a 
+//Display all songs produced by the artist "Coldplay" AND has a 
 //"Song Hotness" greater or equal to .75 ( >= .75 ) , SORT it by title.
 //Count the total result
 
@@ -192,8 +190,8 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//1- What’s the correlation between "song_hotness" AND "artist_hotness"?
-//2- What’s the correlation between "barsstartdev" AND "beatsstartdev"?
+//1- What’s the correlation between "song_hotness" AND "artist_hotness"
+//2- What’s the correlation between "barsstartdev" AND "beatsstartdev"
 
 //Result for hotness = 0.4706972681953097, StartDev = 0.8896342348554744
 
@@ -207,10 +205,10 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Create a new dataset which only have following conditions
-//   *  Column named "Song" that have "Title" values 
-//   *  Column named "Artist" that have "artist_name" values 
-//   *  New BOOLEAN Column called isPopular, and it's TRUE IF "song_hotness" is greater than .80
+//Create a new dataset which only has following conditions
+//   *  Column named "Song" that has "Title" values 
+//   *  Column named "Artist" that has "artist_name" values 
+//   *  New BOOLEAN Column called isPopular, and it's TRUE is IF "song_hotness" is greater than .80
 //   *  New BOOLEAN Column called "IsTooLoud" which is TRUE IF "Loudness" > 0
 //Display the first 50
 
@@ -237,11 +235,11 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 //Challenge: 
 //Display number of songs per "Year" and count your total 
 
-//Result has 2 columns(fields), Year and TotalSongs, and count is 89
+//Result has 2 col, Year and TotalSongs, count is 89
 
 //Hint: All you need is a cross-tab TABLE 
 
-//Display the result      
+//Display the  result      
 
 //Count and display total number of years counted
 
@@ -261,7 +259,8 @@ OUTPUT(CHOOSEN(MSDMusic, 150), NAMED('Raw_MusicDS'));
 
 // Display the top ten results with top "HotRate"      
 
-//Import:ecl:ECLCode.BWR_MusicMozChallenge
+//Import:ECLCode.BWR_MusicMozChallenge
+#OPTION('obfuscateOutput', TRUE);
 IMPORT $;
 MozMusic := $.File_Music.MozDS;
 
@@ -278,84 +277,72 @@ OUTPUT(CHOOSEN(MozMusic, 150), NAMED('Moz_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//Sort "genre" and count your total music dataset and display the first 50
+//Count all the records in the dataset:
+
 
 //Result: Total count is 136510
 
-//Sort by "genre"
+//*********************************************************************************
+//*********************************************************************************
+//Challenge: 
 
+//Sort by "name",  and display (OUTPUT) the first 50(Hint: use CHOOSEN):
 
-//display the first 50
+//You should see a lot of songs by NSync 
 
-
-//Count and display result
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display first 50 songs by "Alternative Rock" genre and then count the total 
-
-//Result should have 2384 records/counts
-
-//Filter for Alternative Rock and print the 50
+//Count total songs in the "Rock" genre and display number:
 
 
-//Count total alternative rock:
+//Result should have 12821 Rock songs
 
+//Display your Rock songs (OUTPUT):
 
-//*********************************************************************************
-//*********************************************************************************
-//Challenge: 
-//Count how many songs was releaseded by "Sting" in 1985?
-
-//Result should have 10 songs
-
-//Filter dataset for "Sting" AND '1985'
-
-//Count and print total 
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Who sang "Yesterday"?
+//Count how many songs was released by Depeche Mode between 1980 and 1989
 
-// Result should have 49 records by multiple artists  
+//Filter ds for "Depeche_Mode" AND releasedate BETWEEN 1980 and 1989
 
-//Filter for "Yesterday"
-
-
-//Display and count result 
+// Count and display total
+//Result should have 127 songs 
 
 
-//*********************************************************************************
-//*********************************************************************************
-//Challenge: 
-//Sort songs by Artist and song title, output the first 100
-
-//Result: You should see *N_Sync as the first artist                                     
-
-//Sort dataset by Artist, and Title
-
-
-//Output the first 100
+//Bonus points: filter out duplicate tracks (Hint: look at DEDUP):
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//What song(s) in the Music Moz Dataset had the longest description?
+//Who sang the song "My Way"?
+//Filter for "My Way" tracktitle
 
-//Result is REO Speedwagon (The Second Decade of Rock and Roll 1981 to 1991)
+// Result should have 136 records 
 
-//Get the Max description field length
+//Display count and result 
 
 
-//Filter dataset for the Maxdesc value
+//*********************************************************************************
+//*********************************************************************************
+//Challenge: 
+//What song(s) in the Music Moz Dataset has the longest track title in CD format?
+
+//Get the longest description (tracktitle) field length in CD "formats"
+
+
+//Filter dataset for tracktitle with the longest value
 
 
 //Display the result
+
+//Longest track title is by the "The Brand New Heavies"               
 
 
 //*********************************************************************************
@@ -366,21 +353,21 @@ OUTPUT(CHOOSEN(MozMusic, 150), NAMED('Moz_MusicDS'));
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Display all songs produced by "Coldplay" , SORT it by song title.
-//Count the total result
+//Display all songs produced by "U2" , SORT it by title.
 
-//Result has 63 records
-
-//Get songs by defined conditions
+//Filter track by artist
 
 
-//Sort the result
+//Sort the result by tracktitle
 
 
 //Output the result
 
 
-//Count and output result 
+//Count result 
+
+
+//Result has 190 records
 
 
 //*********************************************************************************
@@ -388,41 +375,37 @@ OUTPUT(CHOOSEN(MozMusic, 150), NAMED('Moz_MusicDS'));
 //Challenge: 
 //Count all songs where guest musicians appeared 
 
-//Result is 44588 songs  
-
 //Hint: Think of the filter as "not blank" 
 
-//Filter for required conditions
+//Filter for "guestmusicians"
 
-//Count result
+
+//Display Count result
                              
 
-//Display result
+//Result should be 44588 songs  
 
 
 //*********************************************************************************
 //*********************************************************************************
 //Challenge: 
-//Create a new dataset which only has "TrackTitle", "Name", "Title", and "ReleaseDate"
-//Display the first 50
+//Create a new recordset which only has "Track", "Release", "Artist", and "Year"
+// Get the "track" value from the MusicMoz TrackTitle field
+// Get the "release" value from the MusicMoz Title field
+// Get the "artist" value from the MusicMoz Name field
+// Get the "year" value from the MusicMoz ReleaseDate field
 
-//Result should only have 4 columns. 
+//Result should only have 4 fields. 
 
-//Hint: Create your new layout and use TRANSFORM for new fields. 
+//Hint: First create your new RECORD layout  
+
+
+
+//Next: Standalone Transform - use TRANSFORM for new fields.
+
+
 //Use PROJECT, to loop through your music dataset
 
-
-Song_Layout := RECORD
-     STRING Track;
-     STRING Release;
-     STRING Artist;
-     INTEGER Year;
-END;
-
-//Standalone Transform 
-
-
-//PROJECT
 
 // Display result  
       
@@ -436,18 +419,17 @@ END;
 //*********************************************************************************
 
 //Challenge: 
-//Display number of songs per "Genre", display the first 50 and count your total 
+//Display number of songs per "Genre", display genre name and count for each 
 
-//Result has 2 col, Genre and TotalSongs, count is 1000
+//Hint: All you need is a 2 field TABLE using cross-tab
 
-//Hint: All you need is a TABLE 
-
-
-//Printing the first 50 records of the result      
+//Display the TABLE result      
 
 
-//Count and display total
+//Count and display total records in TABLE
 
+
+//Result has 2 fields, Genre and TotalSongs, count is 1000
 
 //*********************************************************************************
 //*********************************************************************************
@@ -457,13 +439,14 @@ END;
 
 //Output Name, and Title Count(TitleCnt)
 
-//Filter for year
+//Filter for year (releasedate)
 
-// deduptitles(name='Presley,_Elvis'); //See why Elvis was the winner!
+//Cross-tab TABLE
+
 
 //Display the result      
 
-//Import:ecl:ECLCode.BWR_SpotifyChallenge
+//Import:ECLCode.BWR_SpotifyChallenge
 IMPORT $;
 SpotMusic := $.File_Music.SpotDS;
 
@@ -719,7 +702,7 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 
 
 
-//Import:ecl:ECLCode.CrossTabExample
+//Import:ECLCode.CrossTabExample
 MyRec := RECORD
     STRING1  Value1;
     STRING1  Value2;
@@ -750,7 +733,7 @@ OUTPUT(MyTable);
     3       B       1           4
 */
 
-//Import:ecl:ECLCode.File_Music
+//Import:ECLCode.File_Music
 /* You have 3 datasets to work with in this challenge:
    MusicMoz
    Spotify 2000
@@ -758,80 +741,24 @@ OUTPUT(MyTable);
 */
  
 EXPORT File_Music := MODULE
-/* name            The artist name behind the release. There are 1276 unique names in the MusicMoz dataset
-   id              A 16-character unique id for each release. There are a little over 12000 unique releases in this dataset
-   rtype           Extracted from the original dataset – always “release”
-   title           Release name. 
-   genre           There are 1000 genre types in MusicMoz (Example, Alternative, Rock, Country, etc.)
-   releasedate     Release Date in no specific format, generally only year is specified.
-   disc            This field is not used and is always blank
-   number          Track number of the release
-   tracktitle      Name of the track (song)
-   formats         Wide variety of release formats (over 400)
-   label	          The name of the record company who released the album
-   catalognumber   Record companies’ catalog number
-   producers       Comma delimited list of primary producers
-   coversrc        Web link to Release (Album) Cover art.
-   guestmusicians	 Comma delimited list of guest musicians on the release
-   description     General free form comments regarding the release.
-*/
-
 EXPORT MozLayout := RECORD
- string45    name;
- string16    id;
- string11    rtype;
- string126   title;
- string131   genre;
- string28    releasedate;
- string2     disc;
- unsigned2   number;
- string657   tracktitle;
- string66    formats;
- string77    label;
- string107   catalognumber;
- string250   producers;
- string150   coversrc;
- string4981  guestmusicians;
+ string45  name;
+ string16  id;
+ string11  rtype;
+ string126 title;
+ string131 genre;
+ string28  releasedate;
+ string2   disc;
+ unsigned2 number;
+ string657 tracktitle;
+ string66  formats;
+ string77  label;
+ string107 catalognumber;
+ string250 producers;
+ string150 coversrc;
+ string4981 guestmusicians;
  string21827 description;
 END;
-
-// MSD Layout
-/* RecID             Unique Record ID
-   song_id           The original song ID used by Echo Nest, not really used in this challenge 		
-   title             song title 
-   year              year song was released 
-   song_hotness      download indicator (0 to 1) 
-   artist_id         original artist id from musicbrainz.org 
-   artist_name       artist name 
-   artist_hotness    overall downloads of artist (0 to 1) 
-   familiarity       search indicator of artist 
-   release_id        Album id where song (title) exists
-   release_name      name of release where song exists
-   latitude          latitude where the song was recorded 
-   Longitude         Longitude where the song was recorded 
-   Location          where the song was recorded 
-   key               Estimation of the key the song in in by Spotify
-   key_conf          Confidence of the key estimation 
-   loudness          General loudness of the track relative to -60db
-   mode              Estimation of mode the song is in by Spotify 
-   mode_conf         Confidence of the mode estimation 
-   duration          Song duration in seconds  
-   start_of_fade_out Fade out of song in seconds 
-   end_of_fade_in    Fade in to song in seconds 
-   tempo             tempo in beats per minute (BPM) 
-   time_signature    number of beats per bar 
-   time_signature_conf  Confidence of the time signature estimation 
-   CntBars           Total Bars in the song
-   AvgBarsConf       Bars_Analysis   
-   BarsConfDev       Bars_Analysis
-   AvgBarsStart      Bars_Analysis   
-   BarsStartDev      Bars_Analysis
-   CntBeats          Beats_Analysis
-   AvgBeatsConf      Beats_Analysis   
-   BeatsConfDev      Beats_Analysis
-   AvgBeatsStart     Beats_Analysis   
-   BeatsStartDev     Beats_Analysis
-*/
 
 EXPORT MSDLayout := RECORD
     UNSIGNED4 RecID;
@@ -922,7 +849,7 @@ EXPORT MozDS  := DATASET('~MIL::IN::MozTracks',MozLayout,CSV(HEADING(1)));
 EXPORT MSDDS  := DATASET('~MIL::IN::MillionSongs',MSDLayout,CSV(HEADING(1)));
 EXPORT SpotDS := DATASET('~MIL::IN::Spotify2000',SpotLayout,CSV(HEADING(1)));
 END;
-//Import:ecl:ECLCode.FilterExample
+//Import:ECLCode.FilterExample
 /*
     Example code - use without restriction.  
 */
@@ -940,11 +867,42 @@ somePeople := allPeople(LastName = 'Smith');
 
 //  Outputs  ---
 somePeople;
-//Import:ecl:ECLCode.Hello
+//Import:ECLCode.Hello
 
-//Import:ecl:ECLCode.Hello-508775
-OUTPUT('Hello Sharks');
-//Import:ecl:ECLCode.JOINExample
+//Import:ECLCode.INLINEExample
+SalaryAvg_layout := RECORD
+ STRING  Job;
+ STRING  Category;
+ STRING  City;
+ STRING2 State;
+ INTEGER Avg_Salary;
+END;
+
+//Inline Dataset
+SalaryAvg_DS := DATASET([
+                          {'Manager','IT','Atlanta','GA', 87000},
+                          {'Director','Art','Atlanta','GA', 100000},
+                          {'CIO','IT','Tampa','FL', 112000},
+                          {'Sales','General','Chicago','IL', 55000}
+                         ],SalaryAvg_Layout
+                         );
+//Output                         
+OUTPUT(SalaryAvg_DS, NAMED('SalaryAvg_DS'));
+
+//Choosen
+OUTPUT(CHOOSEN(SalaryAvg_DS,2), NAMED('SalaryAvg_Choosen'));
+
+//Sort
+SortJobs := SORT(SalaryAvg_DS, Job);
+OUTPUT(SortJobs,NAMED('SortJobs'));
+
+//Filter
+OUTPUT(SalaryAvg_DS(City = 'Tampa'), NAMED('Tampa_Filter'));
+
+
+                         
+                         
+//Import:ECLCode.JOINExample
 MyRec := RECORD
     STRING1 Value1;
     STRING1 Value2;
@@ -1044,7 +1002,29 @@ FOnlyJoinedRecs result set is:
     2        X        B
 */
 
-//Import:ecl:ECLCode.PROJECTExample
+//Import:ECLCode.MATHExample
+MathLayout := RECORD
+ INTEGER Num1;
+ INTEGER Num2;
+ INTEGER Num3;
+END;
+
+DS := DATASET([{20,45,34},
+               {909,56,45},
+               {30,-1,90}],
+               MathLayout);
+//See slides for comments            
+COUNT(DS);
+MAX(DS,Num1);
+MIN(DS,Num2);
+AVE(DS,Num1);
+SUM(DS,Num1+Num3);
+TRUNCATE(AVE(DS,Num1));
+ROUND(3.45);
+ROUND(3.76); 
+
+              
+//Import:ECLCode.PROJECTExample
 MyRec := RECORD
     STRING1 Value1;
     STRING1 Value2;
