@@ -169,11 +169,17 @@ Challenge Rules:
 Combine the above 3 datasets into a composite dataset with the following format:
 
 `CombMusicLayout := RECORD`
+
  `UNSIGNED RECID;`
+
  `STRING   SongTitle;`
+
  `STRING   AlbumTitle;`
+
  `STRING   Artist;`
+
  `STRING4  ReleaseYear;`
+ 
  `END;`
 
 Remove any duplicate songs, sequence the song records and count the new total.
