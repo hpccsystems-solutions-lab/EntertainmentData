@@ -169,18 +169,12 @@ Challenge Rules:
 Combine the above 3 datasets into a composite dataset with the following format:
 
 `CombMusicLayout := RECORD`
-
  `UNSIGNED RECID;`
- 
  `STRING   SongTitle;`
- 
  `STRING   AlbumTitle;`
- 
  `STRING   Artist;`
- 
  `STRING4  ReleaseYear;`
- 
-`END;`
+ `END;`
 
 Remove any duplicate songs, sequence the song records and count the new total.
 
@@ -214,13 +208,13 @@ https://hpccsystems-solutions-lab.github.io
 https://www.youtube.com/watch?time_continue=192&v=Lk78BCCtM-0
 
 - ECL documentation
-http://cdn.hpccsystems.com/releases/CE-Candidate-8.10.12/docs/EN_US/ECLLanguageReference_EN_US-8.10.12-1.pdf
+http://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLLanguageReference_EN_US-9.4.4-1.pdf
 
 - Visualization document
-https://cdn.hpccsystems.com/releases/CE-Candidate-8.10.12/docs/EN_US/VisualizingECL_EN_US-8.10.12-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/VisualizingECL_EN_US-9.4.4-1.pdf
 
 - Standard Library
-https://cdn.hpccsystems.com/releases/CE-Candidate-8.10.12/docs/EN_US/ECLStandardLibraryReference_EN_US-8.10.12-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLStandardLibraryReference_EN_US-9.4.4-1.pdf
 
 - Machine Learning
 https://hpccsystems.com/download/free-modules/machine-learning-library
