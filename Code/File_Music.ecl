@@ -108,8 +108,32 @@ EXPORT SpotLayout := RECORD
 		DECIMAL Speechiness;
 		DECIMAL Popularity;    
 END;
+
+EXPORT SpotMillion := RECORD
+    STRING recid;
+    STRING artist_name;
+    STRING track_name;
+    STRING track_id;
+    STRING popularity;
+    STRING year;
+    STRING genre;
+    STRING danceability;
+    STRING energy;
+    STRING key;
+    STRING loudness;
+    STRING mode;
+    STRING speechiness;
+    STRING acousticness;
+    STRING instrumentalness;
+    STRING liveness;
+    STRING valence;
+    STRING tempo;
+    STRING duration_ms;
+    STRING time_signature;
+END;
    
 EXPORT MozDS  := DATASET('~MIL::IN::MozTracks',MozLayout,CSV(HEADING(1)));
 EXPORT MSDDS  := DATASET('~MIL::IN::MillionSongs',MSDLayout,CSV(HEADING(1)));
 EXPORT SpotDS := DATASET('~MIL::IN::Spotify2000',SpotLayout,CSV(HEADING(1)));
+EXPORT SpotMilDS := DATASET('~MIL::IN::SpotifyMillion',SpotMillion,CSV(HEADING(1)));
 END;

@@ -219,10 +219,10 @@ http://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLLanguageRef
 - Visualization document
 https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/VisualizingECL_EN_US-9.4.4-1.pdf
 
-- Standard Library
+- Standard Library
 https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLStandardLibraryReference_EN_US-9.4.4-1.pdf
 
-- Machine Learning
+- Machine Learning
 https://hpccsystems.com/download/free-modules/machine-learning-library
 
 
@@ -248,11 +248,6 @@ Judges will consider followings during final presentation:
 <div>
 <img src="./Images/Bob.png" alt="Bob Foreman" width="100" height="100" />
 <p><a href = "mailto: robert.foreman@lexisnexisrisk.com">Bob Foreman</a> has been an ECL Trainer for the past 12 years, and has been a Technology Teacher for longer than he wants to admit. He will be your primary onsite contact regarding all ECL related questions during this event.</p>
-</div>
-
-<div>
-<img src="./Images/Richard.jpg" alt="Richard Taylor" width="150" height="100" />
-<p><a href = "mailto: richard.taylor@lexisnexisrisk.com">Richard Taylor</a> is the Chief Trainer at LexisNexis and an ECL Master for the past 20 years. He is also the original member of the Documentation Team.</p>
 </div>
 
 <div>
