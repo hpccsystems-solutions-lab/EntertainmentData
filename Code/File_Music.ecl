@@ -1,6 +1,6 @@
 ﻿/* You have 3 datasets to work with in this challenge:
    MusicMoz
-   Spotify 2000
+   Spotify Complete
    Million Song Dataset (predecessor to Spotify)
 */
  
@@ -109,27 +109,28 @@ EXPORT SpotLayout := RECORD
 		DECIMAL Popularity;    
 END;
 
+//https://www.kaggle.com/datasets/amitanshjoshi/spotify-1million-tracks
 EXPORT SpotMillion := RECORD
     STRING recid;
     STRING artist_name;
     STRING track_name;
     STRING track_id;
-    STRING popularity;
-    STRING year;
+    STRING popularity;        //0 to 100
+    STRING year;              //2000 to 2023
     STRING genre;
-    STRING danceability;
-    STRING energy;
-    STRING key;
-    STRING loudness;
-    STRING mode;
-    STRING speechiness;
-    STRING acousticness;
-    STRING instrumentalness;
-    STRING liveness;
-    STRING valence;
-    STRING tempo;
-    STRING duration_ms;
-    STRING time_signature;
+    STRING danceability;      //0.0 to 1.0
+    STRING energy;            //the perpetual measure of intensity and activity (0.0 to 1.0) 
+    STRING key;               //the key the track is in (-1 to -11)
+    STRING loudness;          //overall loudness of track in decibels (-60 to 0db) 
+    STRING mode;              //modality of the track (Major = 1/Minor = 0)
+    STRING speechiness;       //presence of spoken word in the track
+    STRING acousticness;      //confidence measure on whether the track is acoustic (0 to 1)
+    STRING instrumentalness;  //whether tracks contain vocals (0 to 1)
+    STRING liveness;          //presence of audience in the recording (0 to 1)
+    STRING valence;           //musical positiveness (0 to 1)
+    STRING tempo;             //tempo of track in beats per minute
+    STRING duration_ms;       //duration of track in milliseconds
+    STRING time_signature;    //estimated time signature (3 to 7)
 END;
    
 EXPORT MozDS  := DATASET('~MIL::IN::MozTracks',MozLayout,CSV(HEADING(1)));

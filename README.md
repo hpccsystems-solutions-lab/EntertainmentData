@@ -1,22 +1,27 @@
 # HPCC Systems ECL Code Challenge
 
-Welcome to the HPCC Systems ECL Code Challenge!
-This challenge is named "Music is Life" 
+Welcome to the HPCC Systems "Music is Life" ECL Code Challenge!
 
-You will be introduced to big data concepts, how to process and analyze data using ECL (Enterprise Control Language). This challenge starts with an overview of ECL language and its syntax. Then students are given a series of problems ranging from easy to mid-level difficulty to solve. 
+The goal of this challenge is to introduce you to big data concepts and best industry practices, including how to process and analyze data using ECL (Enterprise Control Language) in the LexisNexis HPCC Systems platform.
+
+This challenge starts with an overview of ECL language and its syntax. You will be given a series of questions ranging from easy to mid-level difficulty to solve. 
 
 ## Data Sources (Datasets)
 
-For the Music is Life Challenge you have 3 music datasets to explore:
+For the Music is Life Challenge you have 3 large music datasets to explore:
 
-1. Spotify Top 2000
-[Kaggle - Spotify](https://www.kaggle.com/iamsumat/spotify-top-2000s-mega-dataset) data is extracted from the Spotify playlist - Top 2000s on PlaylistMachinery(@plamere) using Selenium with Python.
+1. Spotify Songs
+[Kaggle - Spotify](https://www.kaggle.com/datasets/amitanshjoshi/spotify-1million-tracks) This dataset was extracted from the Spotify platform using the Python library "Spotipy", which allows users to access music data provided via APIs. The dataset collected includes about 1 Million tracks with 19 features between 2000 and 2023. Also, there is a total of 61,445 unique artists and 82 genres in the data.
 
 2. The Million Song Dataset
 [Million Song Dataset](http://millionsongdataset.com/)
 
 3. The MusicMoz Open Music Project
 [MusicMoz - Releases](https://musicmoz.org)
+
+4. Spotify Update
+[Kaggle - Spotify](https://www.kaggle.com/iamsumat/spotify-top-2000s-mega-dataset) data is extracted from the Spotify playlist - Top 2000s on PlaylistMachinery(@plamere) using Selenium with Python.
+
  
 ## Challenge 
 For each of the Dataset above, there are challenge questions shown here.
