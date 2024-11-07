@@ -201,31 +201,22 @@ PDFs in the Docs folder of this repository can be found to guide you through the
 
 [VS-Code IDE Install Page](https://code.visualstudio.com/download).
 
-Download QuickStart.mod located in this repository's root folder. This file has the initial code you need for this challenge. 
-The import process will be discussed at the Workshops, but in both IDEs simply open the MOD file and follow the prompts. CTRL+O in the ECL IDE, and the F1 key in VS-Code will pop up the command dialog, and look for the "ECL: Import 'mod' file" command. 
-
-If you need more information on the ECL jobs you are running please use [ECL Watch Page](http://training.us-hpccsystems-dev.azure.lnrsg.io:8010)
+If you need more information on the ECL jobs you are running please use [ECL Watch Page](http://challenge.us-hpccsystems-dev.azure.lnrsg.io:8010/)
 
 **Note: This cluster will only be active during the event!** After the event, you can create your own localized container cluster, or visit our public "Play" Cluster: (https://play.hpccsystems.com:18010) 
 
-For a quick start on ECL syntax, please visit the [Learn ECL](https://hpccsystems-solutions-lab.github.io/) page. 
+For a quick start on ECL syntax, please visit the [Learn ECL](https://solutionslab.hpccsystems.com/learn-ecl/introduction/) page. 
 
 ## Additional Resources
 
-- Learn ECL Academy
-https://hpccsystems-solutions-lab.github.io
-
-- ECL training containing six short videos
-https://www.youtube.com/watch?time_continue=192&v=Lk78BCCtM-0
-
-- ECL documentation
-http://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLLanguageReference_EN_US-9.4.4-1.pdf
+- Full ECL documentation:
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.8.36/docs/EN_US/ECLLanguageReference_EN_US-9.8.36-1.pdf
 
 - Visualization document
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/VisualizingECL_EN_US-9.4.4-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.8.36/docs/EN_US/VisualizingECL_EN_US-9.8.36-1.pdf
 
 - Standard Library
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.4.4/docs/EN_US/ECLStandardLibraryReference_EN_US-9.4.4-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.8.36/docs/EN_US/ECLStandardLibraryReference_EN_US-9.8.36-1.pdf
 
 - Machine Learning
 https://hpccsystems.com/download/free-modules/machine-learning-library
@@ -236,8 +227,8 @@ https://hpccsystems.com/download/free-modules/machine-learning-library
 Judges will consider followings during final presentation:
 
 - Problem that was chosen (What categories and datasets were selected)
-- How you approached the solution
-
+- How many challenge questions were answered by your team?
+- Any additional insights into the data you were exploring?
 
 
 ## Tips for a Great Score
