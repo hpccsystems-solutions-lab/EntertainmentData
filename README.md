@@ -1,4 +1,4 @@
-# HPCC Systems ECL Code Challenge
+# HPCC Systems ECL Code Challenge - Music is Life!
 
 Welcome to the HPCC Systems "Music is Life" ECL Code Challenge!
 
