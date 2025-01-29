@@ -15,55 +15,54 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//Sort "TopGenre" and count your total music dataset and display the first 50
+//Sort songs by genre and count the number of songs in your total music dataset 
 
-//Result: Total count is 1994 
+ 
 
-//Sort by "TopGenre"
-
-
-//display the first 50
+//Sort by "genre" (See SORT function)
 
 
-//Count and display result
+//Display them: (See OUTPUT)
+
+
+//Count and display result (See COUNT)
+//Result: Total count is 1159764:
 
 
 //*********************************************************************************
 //*********************************************************************************
 
 //Challenge: 
-//Display first 50 songs by "garage rock" genre and then count the total 
+//Display songs by "garage" genre and then count the total 
+//Filter for garage rock and OUTPUT them:
 
-//Result should have 4 records/counts
-
-//Filter for garage rock and display the 50
 
 //Count total garage rock
-
-//*********************************************************************************
-//*********************************************************************************
-
-//Challenge: 
-//Count how many songs was produced by "Prince" in 1984
-
-//Result should have 4 counts
-
-//Filter ds for "Prince" AND 1984
-
-
-//Count and display total 
+//Result should have 17123 records:
 
 
 //*********************************************************************************
 //*********************************************************************************
 
 //Challenge: 
-//Who sang "Into Temptation"?
+//Count how many songs was produced by "Prince" in 2001
 
-// Result should have 1 record and the artist is "Crowded House"
+//Filter ds for 'Prince' AND 2001
 
-//Filter for "Into Temptation"
 
+//Count and output total - should be 35 
+
+
+
+//*********************************************************************************
+//*********************************************************************************
+
+//Challenge: 
+//Who sang "Temptation to Exist"?
+
+// Result should have 1 record and the artist is "New York Dolls"
+
+//Filter for "Temptation to Exist" (name is case sensitive)
 
 //Display result 
 
@@ -72,36 +71,37 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//Sort songs by Artist and title, output the first 100
+//Output songs sorted by Artist_name and track_name, respectively
 
-//Result: First few rows should have Title and Artist as following:
-//   Dreadlock Holiday          ***   10cc
-//   I'm Not In Love            ***   10cc
-//   The Wall Street Shuffle    ***   10cc
-//   California Love            ***   2Pac
-
-
-//Sort dataset by Artist, and Title
+//Result: First few rows should have Artist and Track as follows:
+// !!! 	Californiyeah                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+// !!! 	Couldn't Have Known                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+// !!! 	Dancing Is The Best Revenge                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+// !!! 	Dear Can   
+// (Yes, there is a valid artist named "!!!")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 
-//Output the first 100
+//Sort dataset by Artist_name, and track_name:
+
+
+//Output here:
+
 
 
 //*********************************************************************************
 //*********************************************************************************
 
 //Challenge: 
-//Find the least Popular song using "Popularity" field
+//Find the MOST Popular song using "Popularity" field
 
-//Result is "Sacrifice" by "Anouk", "Popularity" is 11
-
-//Get the least Popularity value
+//Get the most Popular value (Hint: use MAX)
 
 
-//Filter dataset for the leastPop value
+//Filter dataset for the mostPop value
 
 
-//Display the result
+//Display the result - should be "Flowers" by Miley Cyrus
+
 
 
 //*********************************************************************************
@@ -135,52 +135,45 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//Count all songs that "SongDuration" is between 200 AND 250 AND "Speechiness" is above 14 
-
-//Result is 24
-
-//Hint: (SongDuration > 200 AND SongDuration < 250)
+//Count all songs that whose "SongDuration" (duration_ms) is between 200000 AND 250000 AND "Speechiness" is above .75 
+//Hint: (Duration_ms BETWEEN 200000 AND 250000)
 
 //Filter for required conditions
+                          
 
+//Count result (should be 2153):
 
-//Count result
-                             
-
-//Display result
-
+//Display result:
 
 //*********************************************************************************
 //*********************************************************************************
 
 //Challenge: 
 //Create a new dataset which only has "Artist", "Title" and "Year"
-//Display the first 50
+//Output them
 
 //Result should only have 3 columns. 
 
 //Hint: Create your new layout and use TRANSFORM for new fields. 
 //Use PROJECT, to loop through your music dataset
 
+//Define RECORD here:
 
+//Standalone TRANSFORM Here 
 
-//Create Transform 
+//PROJECT here:
 
-
-//Create PROJECT
-
-
-// Display result  
+//OUTPUT your PROJECT here:
       
 
 //*********************************************************************************
 //*********************************************************************************
 
-//Challenge: 
+//COORELATION Challenge: 
 //1- What’s the correlation between "Popularity" AND "Liveness"
 //2- What’s the correlation between "Loudness" AND "Energy"
 
-//Result for liveness = -0.1119777784368349, Energy = 0.7357108817659003
+//Result for liveness = -0.05696845812100079, Energy = -0.03441566150625201
 
 
 
@@ -194,27 +187,29 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 
 //Challenge: 
 //Create a new dataset which only has following conditions
-//   *  Column named "Song" that has "Title" values 
+//   *  STRING Column(field) named "Song" that has "Track_Name" values
+//   *  STRING Column(field) named "Artist" that has "Artist_name" values
 //   *  New BOOLEAN Column called isPopular, and it's TRUE is IF "Popularity" is greater than 80
-//   *  New INTEGER Column called "Funkiness" which is  "Loudness" + "Danceability"
-//Display the first 50
+//   *  New DECIMAL3_2 Column called "Funkiness" which is  "Energy" + "Danceability"
+//Display the output
 
-//Result should have 3 columns called "Song", "isPopular", and "Funky"
+//Result should have 4 columns called "Song", "Artist", "isPopular", and "Funkiness"
 
 
 //Hint: Create your new layout and use TRANSFORM for new fields. 
 //      Use PROJECT, to loop through your music dataset
 
-//Create the RECORD layout
+//Define the RECORD layout
 
 
-//Build transfrom
+//Build TRANSFORM
 
 
-//Create project
+//Project here:
 
 
-//Display result
+//Display result here:
+
 
                        
                                               
@@ -222,32 +217,29 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 //*********************************************************************************
 
 //Challenge: 
-//Display number of songs per "TopGenre", display the first 50 and count your total 
+//Display number of songs for each "Genre", output and count your total 
 
-//Result has 2 col, TopGenre and TotalSongs, count is 149
+//Result has 2 col, Genre and TotalSongs, count is 82
 
-//Hint: All you need is a TABLE 
+//Hint: All you need is a TABLE - this is a CrossTab report 
 
+//Printing the first 50 records of the result      
 
+//Count and display total - there should be 82 unique genres
 
-//displaying the first 50 records of the result      
-
-
-//Count and display total
-
+//Bonus: What is the top genre?
 
 //*********************************************************************************
 //*********************************************************************************
-//Calculate average "Danceability" per "Artist" for "Year" 2008
+//Calculate the average "Danceability" per "Artist" for "Year" 2023
 
 //Hint: All you need is a TABLE 
 
-//Result has 40 records with two col, Artist, and DancableRate.
+//Result has 37600 records with two col, Artist, and DancableRate.
 
-//Filter for year
+//Filter for year 2023
 
-
-//displaying the result      
+//OUTPUT the result    
 
 
 

@@ -1,7 +1,7 @@
 ﻿/* You have 3 datasets to work with in this challenge:
    MusicMoz
-   Spotify Complete
    Million Song Dataset (predecessor to Spotify)
+   Spotify Million
 */
  
 EXPORT File_Music := MODULE
@@ -62,79 +62,31 @@ EXPORT MSDLayout := RECORD
     REAL      BeatsStartDev;//Beats_Analysis		
 END;
 
-/*
-Data Source:
-https://www.kaggle.com/iamsumat/spotify-top-2000s-mega-dataset
-
-This data is extracted from the Spotify playlist - 
-Top 2000s on PlaylistMachinery(@plamere) using Selenium with Python.
-
-
-//********************************************************
-Data dictionary
- 
-ID:             ID - Record Index
-Title:          Name of the Track
-Artist:         Name of the Artist
-TopGenre:       Genre of the track
-Year:           Release Year of the track.
-BeatsperMinute: (BPM) The tempo of the song.
-Energy:         The energy of a song - the higher the value, the more energtic song.
-Danceability:   The higher the value, the easier it is to dance to this song.
-Loudness:       The higher the value, the louder the song.
-Valence:        The higher the value, the more positive mood for the song.
-SongDuration:   The duration of the song.
-Acoustic:       The higher the value the more acoustic the song is.
-Speechiness:    The higher the value the more spoken words the song contains.
-Popularity:     The higher the value the more popular the song is.
-
-
-*/
-
-EXPORT SpotLayout := RECORD
-		INTEGER ID;
-		STRING  Title;
-		STRING  Artist;
-		STRING  TopGenre;
-		INTEGER Year;
-		INTEGER BeatsPerMinute;
-		DECIMAL Energy;
-		DECIMAL Danceability;
-		DECIMAL Loudness;
-		DECIMAL Liveness;
-		DECIMAL Valence;
-		DECIMAL SongDuration;
-		DECIMAL Acousticness;
-		DECIMAL Speechiness;
-		DECIMAL Popularity;    
-END;
-
 //https://www.kaggle.com/datasets/amitanshjoshi/spotify-1million-tracks
 EXPORT SpotMillion := RECORD
-    STRING recid;
-    STRING artist_name;
-    STRING track_name;
-    STRING track_id;
-    STRING popularity;        //0 to 100
-    STRING year;              //2000 to 2023
-    STRING genre;
-    STRING danceability;      //0.0 to 1.0
-    STRING energy;            //the perpetual measure of intensity and activity (0.0 to 1.0) 
-    STRING key;               //the key the track is in (-1 to -11)
-    STRING loudness;          //overall loudness of track in decibels (-60 to 0db) 
-    STRING mode;              //modality of the track (Major = 1/Minor = 0)
-    STRING speechiness;       //presence of spoken word in the track
-    STRING acousticness;      //confidence measure on whether the track is acoustic (0 to 1)
-    STRING instrumentalness;  //whether tracks contain vocals (0 to 1)
-    STRING liveness;          //presence of audience in the recording (0 to 1)
-    STRING valence;           //musical positiveness (0 to 1)
-    STRING tempo;             //tempo of track in beats per minute
-    STRING duration_ms;       //duration of track in milliseconds
-    STRING time_signature;    //estimated time signature (3 to 7)
+    UNSIGNED4 recid;
+    STRING122 artist_name;
+    STRING517 track_name;
+    STRING22  track_id;
+    UNSIGNED2 popularity;       //0 to 100
+    UNSIGNED2 year;             //2000 to 2023
+    STRING17  genre;            
+    REAL4     danceability;     //0.0 to 1.0
+    STRING8   energy;           //the perpetual measure of intensity and activity (0.0 to 1.0)
+    UNSIGNED1 key;              //the key the track is in (-1 to -11)
+    REAL4     loudness;         //overall loudness of track in decibels (-60 to 0db) 
+    UNSIGNED1 mode;             //modality of the track (Major = 1/Minor = 0)
+    REAL4     speechiness;      //presence of spoken word in the track
+    STRING8   acousticness;     //confidence measure on whether the track is acoustic (0 to 1)
+    STRING8   instrumentalness; //whether tracks contain vocals (0 to 1)
+    REAL4     liveness;         //presence of audience in the recording (0 to 1)
+    STRING8   valence;          //musical positiveness (0 to 1)
+    REAL4     tempo;            //tempo of track in beats per minute
+    UNSIGNED4 duration_ms;      //duration of track in milliseconds
+    UNSIGNED1 time_signature;   //estimated time signature (3 to 7)
 END;
    
 EXPORT MozDS  := DATASET('~MIL::IN::MozTracks',MozLayout,CSV(HEADING(1)));
 EXPORT MSDDS  := DATASET('~MIL::IN::MillionSongs',MSDLayout,CSV(HEADING(1)));
-EXPORT SpotDS := DATASET('~MIL::IN::Spotify2000',SpotLayout,CSV(HEADING(1)));
-EXPORT SpotMilDS := DATASET('~MIL::IN::SpotifyMillion',SpotMillion,CSV(HEADING(1)));
+EXPORT SpotDS := DATASET('~MIL::IN::SpotifyMillion',SpotMillion,CSV(HEADING(1)));
 END;
