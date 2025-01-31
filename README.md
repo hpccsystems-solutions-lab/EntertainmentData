@@ -19,10 +19,6 @@ For the Music is Life Challenge you have 3 large music datasets to explore:
 3. The MusicMoz Open Music Project
 [MusicMoz - Releases](https://musicmoz.org)
 
-4. Spotify Update
-[Kaggle - Spotify](https://www.kaggle.com/iamsumat/spotify-top-2000s-mega-dataset) data is extracted from the Spotify playlist - Top 2000s on PlaylistMachinery(@plamere) using Selenium with Python.
-
- 
 ## Challenge 
 For each of the Dataset above, there are challenge questions shown here.
 
@@ -212,25 +208,25 @@ For a quick start on ECL syntax, please visit the [Learn ECL](https://solutionsl
 ## Additional Resources
 
 - Full ECL documentation:
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.8.36/docs/EN_US/ECLLanguageReference_EN_US-9.8.36-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.10.0/docs/EN_US/ECLLanguageReference_EN_US-9.10.0-1.pdf
 
 - Visualization document
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.8.36/docs/EN_US/VisualizingECL_EN_US-9.8.36-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.10.0/docs/EN_US/VisualizingECL_EN_US-9.10.0-1.pdf
 
 - Standard Library
-https://cdn.hpccsystems.com/releases/CE-Candidate-9.8.36/docs/EN_US/ECLStandardLibraryReference_EN_US-9.8.36-1.pdf
+https://cdn.hpccsystems.com/releases/CE-Candidate-9.10.0/docs/EN_US/ECLStandardLibraryReference_EN_US-9.10.0-1.pdf
 
 - Machine Learning
 https://hpccsystems.com/download/free-modules/machine-learning-library
 
 
-## Challenge Expectation
+## Challenge Expectation and Criteria
 
-Judges will consider followings during final presentation:
+Judges will consider the follow during final presentations:
 
-- Problem that was chosen (What categories and datasets were selected)
+- What categories and datasets were examined?
 - How many challenge questions were answered by your team?
-- Any additional insights into the data you were exploring?
+- Any additional insights into the data you were exploring? (Song analysis, generating playlists, etc.)
 
 
 ## Tips for a Great Score
@@ -245,17 +241,17 @@ Judges will consider followings during final presentation:
 
 <div>
 <img src="./Images/Bob.png" alt="Bob Foreman" width="100" height="100" />
-<p><a href = "mailto: robert.foreman@lexisnexisrisk.com">Bob Foreman</a> has been an ECL Trainer for the past 12 years, and has been a Technology Teacher for longer than he wants to admit. He will be your primary onsite contact regarding all ECL related questions during this event.</p>
+<p><a href = "mailto: robert.foreman@lexisnexisrisk.com">Bob Foreman</a> has been an ECL Trainer for the past 14 years, and has been a Technology Teacher for longer than he wants to admit. He will be your primary onsite contact regarding all ECL related questions during this event.</p>
 </div>
 
 <div>
 <img src="./Images/Hugo.jpg" alt="Hugo Watanuki" width="100" />
-<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is responsible for the HPCC Systems Summer Internship Program. He will be available online in our slack channel to help you with ECL questions and resources you might need during this event.</p>
+<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is a leader in our Technology Training and Outreach. He will be available online in our slack channel to help you with ECL questions and resources you might need during this event.</p>
 </div>
 
 <div>
 <img src="./Images/George.png" alt="George Foreman" width="100" />
-<p><a href = "mailto: george.foreman@lexisnexisrisk.com">George Foreman</a> is our HPCC Systems Product Specialist and Technical Writer. He will be available onsite to help you with locating the resources you need during this event.</p>
+<p><a href = "mailto: george.foreman@lexisnexisrisk.com">George Foreman</a> is our HPCC Systems Product Specialist and Business Analyst. He will be available onsite to help you with locating the resources you need during this event.</p>
 </div>
 
 ### Contact
