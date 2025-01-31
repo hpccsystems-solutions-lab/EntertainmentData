@@ -2,7 +2,7 @@
 
 Welcome to the HPCC Systems "Music is Life" ECL Code Challenge!
 
-The goal of this challenge is to introduce you to big data concepts and best industry practices, including how to process and analyze data using ECL (Enterprise Control Language) in the LexisNexis HPCC Systems platform.
+The goal of this challenge is to introduce you to big data concepts and best industry practices, including how to process and analyze data using ECL (Enterprise Control Language) in the LexisNexis Risk Solutions HPCC Systems platform.
 
 This challenge starts with an overview of ECL language and its syntax. You will be given a series of questions ranging from easy to mid-level difficulty to solve. 
 
@@ -20,7 +20,7 @@ For the Music is Life Challenge you have 3 large music datasets to explore:
 [MusicMoz - Releases](https://musicmoz.org)
 
 ## Challenge 
-For each of the Dataset above, there are challenge questions shown here.
+For each of the datasets above, there are challenge questions shown here.
 
 Challenge Rules:
 1. Make sure that your solutions are identified to the judges by workunit number and Owner. Your Owner name should be your team name (or individual name if tackling the challenge solo).
@@ -90,7 +90,7 @@ Challenge Rules:
 
 (B)Count all songs whose "Duration" is between 200 AND 250 (inclusive) AND "song_hotness" is not equal to 0 AND "familarity" > .9
 
-(C)Create a new dataset which displays only has the "Title", "Artist_Name", "Release_Name" and "Year" information.
+(C)Create a new dataset which displays only the "Title", "Artist_Name", "Release_Name" and "Year" information.
 
 (D)Calculate Correlation:
 
@@ -126,7 +126,7 @@ Challenge Rules:
 
 *Category One (SP1):*
 
-(A)	Sort songs by "genre" and count your total music dataset and display them.
+(A) Sort songs by "genre" and count your total music dataset and display them.
 
 (B) Display only songs by "garage" genre and then count their total.
 
@@ -142,7 +142,7 @@ Challenge Rules:
 
 (A) Display all songs produced by "Coldplay" Artist AND with a "Popularity" greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
 
-(B) Count all songs where song duration (duration_ms)is between 200000 AND 250000 AND "Speechiness" is above 75. Hint: (SongDuration  > 200 AND  SongDuration < 250).
+(B) Count all songs where song duration (duration_ms) is between 200000 AND 250000 AND "Speechiness" is above 75. Hint: (SongDuration  > 200 AND  SongDuration < 250).
 
 (C) Create a new dataset which only has "Artist", "Title" and "Year", display the output. Hint: Create your new layout and use TRANSFORM for your new fields. Use PROJECT to loop through your music dataset.
 
