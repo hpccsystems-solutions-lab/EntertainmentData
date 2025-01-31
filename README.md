@@ -34,7 +34,7 @@ Challenge Rules:
 
 *Category One (MM1):*
 
-(A) Count the total records in the dataset.
+(A) Count the total records in the dataset. (HINT: use COUNT)
 
 (B) Sort MusicMoz by "name" and display (OUTPUT) the first 50 records(Hint: use CHOOSEN)
 
@@ -44,7 +44,7 @@ Challenge Rules:
 
 (E) How many artists sang the song "My Way"? Display all songs and the total count.
 
-(F) What song(s) in the Music Moz Dataset have the longest "description"?
+(F) What song(s) in the Music Moz Dataset has the longest "description"?
 
 *Category Two (MM2):*
 
@@ -82,7 +82,7 @@ Challenge Rules:
 
 - Exclude songs with no year value
 
-- Get the datasets' maximum song_hotness value and use it in your output filter. 
+- Get the dataset's maximum song_hotness value and use it in your output filter. 
 
 *Category Two (MS2):*
 
@@ -94,7 +94,7 @@ Challenge Rules:
 
 (B)Count all songs whose "Duration" is between 200 AND 250 (inclusive) AND "song_hotness" is not equal to 0 AND "familarity" > .9
 
-(C)Create a new dataset which only has the "Title", "Artist_Name", "Release_Name" and "Year" information.
+(C)Create a new dataset which displays only has the "Title", "Artist_Name", "Release_Name" and "Year" information.
 
 (D)Calculate Correlation:
 
@@ -130,44 +130,46 @@ Challenge Rules:
 
 *Category One (SP1):*
 
-(A)	Sort "TopGenre" and count your total music dataset and display the first 50.
+(A)	Sort songs by "genre" and count your total music dataset and display them.
 
-(B) Display first 50 songs by "garage rock" genre and then count the total.
+(B) Display only songs by "garage" genre and then count their total.
 
-(C) Count how many songs were produced by "Prince" in 1984.
+(C) Count how many songs were produced by "Prince" in 2001.
 
-(D) Who sang "Into Temptation"?
+(D) Who sang "Temptation to Exist"? 
 
-(E) Sort songs by Artist and title, output the first 100.
+(E) Sort songs by Artist_name and track_name, respectively.
 
-(F) Find the least Popular song using "Popularity" field
+(F) Find the most Popular song using "Popularity" field.
 
 *Category Two (SP2):*
 
-(A) Display all songs produced by "Coldplay" Artist AND with a “Popularity” greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
+(A) Display all songs produced by "Coldplay" Artist AND with a "Popularity" greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
 
-(B) Count all songs where "SongDuration" is between 200 AND 250 AND "Speechiness" is above 14. Hint: (SongDuration  > 200 AND  SongDuration < 250).
+(B) Count all songs where song duration (duration_ms)is between 200000 AND 250000 AND "Speechiness" is above 75. Hint: (SongDuration  > 200 AND  SongDuration < 250).
 
-(C) Create a new dataset which only has "Artist", "Title" and "Year", Display the first 50. Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
+(C) Create a new dataset which only has "Artist", "Title" and "Year", display the output. Hint: Create your new layout and use TRANSFORM for your new fields. Use PROJECT to loop through your music dataset.
 
 (D) What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy"?
 
 *Category Three (SP3):*
 
 (A) Create a new dataset which only has following conditions:
-- Column named "Song" that has "Title" values
+- Column (field) named "Song" that has "Track_Name" values
+
+- Column (field) named "Artist" that has "Artist_Name" values
 	
-- New BOOLEAN Column called isPopular, and it's TRUE IF "Popularity" is greater than 80
+- New BOOLEAN column (field) named isPopular, and is TRUE IF "Popularity" is greater than 80
 	
 - New INTEGER Column called "Funkiness" which is "Loudness" + "Danceability"
 	
-- Display the first 50
+- Display the output
 	
-- Hint: Create your new layout and use TRANSFORM for new fields. Use PROJECT, to loop through your music dataset
+- Hint: Create your new layout and use TRANSFORM for new fields. Use the PROJECT function to loop through your music dataset
 
-(B) Display number of songs per "TopGenre", display the first 50 and count your total. Hint: All you need is a TABLE
+(B) Display number of songs grouped by "Genre", and count your total. Hint: All you need is a TABLE with cross-tab report.
 
-(C) Calculate average "Danceability" per "Artist" for "Year" 2008 Hint: All you need is a TABLE
+(C) Calculate average "Danceability" per "Artist" for "Year" 2023 Hint: All you need is a TABLE and cross-tab report.
 
 **Bonus Challenge**
 

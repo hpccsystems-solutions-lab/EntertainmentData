@@ -34,10 +34,10 @@ OUTPUT(CHOOSEN(SpotMusic, 150), NAMED('Raw_MusicDS'));
 
 //Challenge: 
 //Display songs by "garage" genre and then count the total 
-//Filter for garage rock and OUTPUT them:
+//Filter for garage genre and OUTPUT them:
 
 
-//Count total garage rock
+//Count total garage songs
 //Result should have 17123 records:
 
 
