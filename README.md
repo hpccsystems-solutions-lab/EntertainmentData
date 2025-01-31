@@ -250,12 +250,17 @@ Judges will consider the follow during final presentations:
 
 <div>
 <img src="./Images/Hugo.jpg" alt="Hugo Watanuki" width="100" />
-<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is a leader in our Technology Training and Outreach. He will be available online in our slack channel to help you with ECL questions and resources you might need during this event.</p>
+<p><a href = "mailto: hugo.watanuki@lexisnexisrisk.com">Hugo Watanuki</a> is a leader in our Technology Training and Outreach. He will be available online in our Slack channel to help you with ECL questions and resources you might need during this event.</p>
 </div>
 
 <div>
 <img src="./Images/George.png" alt="George Foreman" width="100" />
 <p><a href = "mailto: george.foreman@lexisnexisrisk.com">George Foreman</a> is our HPCC Systems Product Specialist and Business Analyst. He will be available onsite to help you with locating the resources you need during this event.</p>
+</div>
+
+<div>
+<img src="./Images/alysson.jpg" alt="Alysson Oliveiera" width="100" />
+<p><a href = "mailto: Alysson.Oliveira@lexisnexisrisk.com">Alysson Oliveira</a> is a Software Engineer II in our Brazil HPCC Systems team and will be available online in our Slack channel to help you with ECL questions and resources you might need during this event.</p>
 </div>
 
 ### Contact
