@@ -183,6 +183,10 @@ Combine the above 3 datasets into a composite dataset with the following format:
 
  `STRING4  ReleaseYear;`
  
+ `STRING4  Genre;`
+ 
+ `STRING4  Source; //MOZ,MSD,SPOT`
+ 
  `END;`
 
 Remove any duplicate songs, sequence the song records and count the new total.
