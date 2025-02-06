@@ -28,7 +28,7 @@ Challenge Rules:
 
 **MusicMoz Challenge questions**
 
-*Category One (MM1):*
+*Category One (MM1)(1 point for each correct answer):*
 
 (A) Count the total records in the dataset. (HINT: use COUNT)
 
@@ -42,7 +42,7 @@ Challenge Rules:
 
 (F) What song(s) in the Music Moz Dataset has the longest "description"?
 
-*Category Two (MM2):*
+*Category Two (MM2)(2 points for each correct answer):*
 
 (A) How many songs were produced by "U2"? , SORT result by song title, and also display the total count in a separate output. 
 
@@ -54,7 +54,7 @@ Challenge Rules:
 
 - Display the first 50 
 
-*Category Three (MM3):*
+*Category Three (MM3) (3 points for each correct answer):*
 
 (A) Display the number of songs grouped by "Genre", display the first 50 and count your total genres. 
 
@@ -62,7 +62,7 @@ Challenge Rules:
 
 **Million Song Dataset Challenge questions**
 
-*Category One (MS1):*
+*Category One (MS1) (1 point for each correct answer):*
 
 (A)Reverse sort your dataset by "year", count the total number of records and display only the first 50
 
@@ -80,7 +80,7 @@ Challenge Rules:
 
 - Get the dataset's maximum song_hotness value and use it in your output filter. 
 
-*Category Two (MS2):*
+*Category Two (MS2): (2 points for each correct answer)*
 
 (A)Display all songs produced by the artist "Coldplay" that have a "Song Hotness" greater or equal to .75 ( >= .75 )
 
@@ -98,7 +98,7 @@ Challenge Rules:
 
 - between "barsstartdev" AND "beatsstartdev"
  
-*Category Three (MS3):*
+*Category Three (MS3) (3 points for each correct answer):*
 
 (A)Create a new dataset which only has following conditions
 
@@ -124,7 +124,7 @@ Challenge Rules:
 
 **Spotify Challenge questions**
 
-*Category One (SP1):*
+*Category One (SP1) (1 point for each correct answer):*
 
 (A) Sort songs by "genre" and count your total music dataset and display them.
 
@@ -138,7 +138,7 @@ Challenge Rules:
 
 (F) Find the most Popular song using "Popularity" field.
 
-*Category Two (SP2):*
+*Category Two (SP2)(2 points for each correct answer):*
 
 (A) Display all songs produced by "Coldplay" Artist AND with a "Popularity" greater or equal to 75 ( >= 75 ) , SORT it by title. Count the result.
 
@@ -148,7 +148,7 @@ Challenge Rules:
 
 (D) What is the correlation between "Popularity" AND "Liveness"? What is the correlation between "Loudness" AND "Energy"?
 
-*Category Three (SP3):*
+*Category Three (SP3)(3 points for each correct answer):*
 
 (A) Create a new dataset which only has following conditions:
 - Column (field) named "Song" that has "Track_Name" values
@@ -167,9 +167,9 @@ Challenge Rules:
 
 (C) Calculate average "Danceability" per "Artist" for "Year" 2023 Hint: All you need is a TABLE and cross-tab report.
 
-**Bonus Challenge**
+**Bonus Challenge (10 points total for completing the challenge)**
 
-Combine the above 3 datasets into a composite dataset with the following format:
+Combine the above 3 datasets into a composite dataset with the following format (3 points):
 
 `CombMusicLayout := RECORD`
 
@@ -189,7 +189,7 @@ Combine the above 3 datasets into a composite dataset with the following format:
  
  `END;`
 
-Remove any duplicate songs, sequence the song records and count the new total.
+Remove any duplicate songs (3 points), sequence the song records (3 points) and count the new total (1 point).
 
 
 ## Tools

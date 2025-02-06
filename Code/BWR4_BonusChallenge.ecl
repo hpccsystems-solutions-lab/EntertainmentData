@@ -12,6 +12,7 @@ CombMusicLayout := RECORD
  STRING   Artist;
  STRING   Genre;
  STRING4  ReleaseYear;
+ STRING4  Source; //MOZ,MSD,SPOT
 END;
 
 OUTPUT('ToDo');
